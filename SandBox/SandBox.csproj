@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SandBox.Constantes\SandBox.Constantes.csproj" />
+    <ProjectReference Include="..\SandBox.DataAccess\SandBox.DataAccess.csproj" />
     <ProjectReference Include="..\SandBox.Services\SandBox.Services.csproj" />
   </ItemGroup>
 

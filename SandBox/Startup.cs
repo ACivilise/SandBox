@@ -37,6 +37,8 @@ namespace SandBox
 
             //augmente le nombre de champs max que peut contenir une form, par défaut cette limite est à 1024
             services.Configure<FormOptions>(options => { options.ValueCountLimit = 10240; });
+
+            services.AddRepositories().AddServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

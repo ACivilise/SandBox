@@ -24,8 +24,9 @@ namespace SandBox.Areas.ML.Controllers
         [HttpGet, Route("[area]/[controller]/[action]/")]
         public async Task<IActionResult> FirstPage()
         {
-
-            return View(new FirstPageModel());
+            var model = new FirstPageModel();
+            model.Prediction = await _MLService.TestdeML();
+            return View();
         }
     }
 }
