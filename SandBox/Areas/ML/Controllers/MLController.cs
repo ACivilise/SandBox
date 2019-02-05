@@ -26,7 +26,7 @@ namespace SandBox.Areas.ML.Controllers
         {
             var model = new FirstPageModel();
             model.Prediction = await _MLService.TestdeML();
-            return View();
+            return View(model);
         }
     }
 }
