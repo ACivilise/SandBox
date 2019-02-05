@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox", "SandBox\SandBox.csproj", "{73C831A9-24DC-47F3-87A0-B12EF20984DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandBox", "SandBox\SandBox.csproj", "{73C831A9-24DC-47F3-87A0-B12EF20984DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Librairies", "Librairies", "{39D6CF9C-3555-4E2D-9A6E-20E7168B6967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox.DTOs", "SandBox.DTOs\SandBox.DTOs.csproj", "{D2ACA27B-9C3A-4B99-9889-D1675547B7DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox.Services", "SandBox.Services\SandBox.Services.csproj", "{D96B4846-7A39-4B2D-A9EF-618912C94F3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox.Constantes", "SandBox.Constantes\SandBox.Constantes.csproj", "{BD5901DE-DAE1-4FEE-B4D4-AC0FC2FDF357}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +23,26 @@ Global
 		{73C831A9-24DC-47F3-87A0-B12EF20984DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73C831A9-24DC-47F3-87A0-B12EF20984DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73C831A9-24DC-47F3-87A0-B12EF20984DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2ACA27B-9C3A-4B99-9889-D1675547B7DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2ACA27B-9C3A-4B99-9889-D1675547B7DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2ACA27B-9C3A-4B99-9889-D1675547B7DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2ACA27B-9C3A-4B99-9889-D1675547B7DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D96B4846-7A39-4B2D-A9EF-618912C94F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D96B4846-7A39-4B2D-A9EF-618912C94F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D96B4846-7A39-4B2D-A9EF-618912C94F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D96B4846-7A39-4B2D-A9EF-618912C94F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD5901DE-DAE1-4FEE-B4D4-AC0FC2FDF357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5901DE-DAE1-4FEE-B4D4-AC0FC2FDF357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5901DE-DAE1-4FEE-B4D4-AC0FC2FDF357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5901DE-DAE1-4FEE-B4D4-AC0FC2FDF357}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2ACA27B-9C3A-4B99-9889-D1675547B7DF} = {39D6CF9C-3555-4E2D-9A6E-20E7168B6967}
+		{D96B4846-7A39-4B2D-A9EF-618912C94F3A} = {39D6CF9C-3555-4E2D-9A6E-20E7168B6967}
+		{BD5901DE-DAE1-4FEE-B4D4-AC0FC2FDF357} = {39D6CF9C-3555-4E2D-9A6E-20E7168B6967}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B613A5AD-DE20-4508-9706-7E583BAE278E}

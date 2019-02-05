@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using NLog.Web;
 
 namespace SandBox
 {
@@ -19,6 +14,21 @@ namespace SandBox
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>() 
+                .ConfigureAppConfiguration((hostContext, config) =>
+                {
+                    // delete all default configuration providers
+                    config.Sources.Clear();
+                    IHostingEnvironment env = hostContext.HostingEnvironment;
+                    config.AddEnvironmentVariables();
+                    config.SetBasePath(env.ContentRootPath);
+                    //config.AddJsonFile($"Settings\\database.json", optional: true, reloadOnChange: true);
+                    config.AddJsonFile($"Settings\\settings.json", optional: true, reloadOnChange: true);
+                    env.ConfigureNLog($"Settings\\nlog.config");
+                })
+#if DEBUG
+                .UseUrls("http://localhost:1987")
+#endif
+                .UseNLog();
     }
 }
