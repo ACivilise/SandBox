@@ -15,7 +15,8 @@ namespace SandBox.Services.Services
             // If working in Visual Studio, make sure the 'Copy to Output Directory'
             // property of iris-data.txt is set to 'Copy always'
             var reader = mlContext.Data.CreateTextReader<IrisData>(separatorChar: ',', hasHeader: false);
-            IDataView trainingDataView = reader.Read("DataSources/iris-data.txt");
+            var repertoireSortie = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            IDataView trainingDataView = reader.Read($"{repertoireSortie}/DataSources/iris.data");
             // STEP 3: Transform your data and add a learner
             // Assign numeric values to text in the "Label" column, because only
             // numbers can be processed during model training.
