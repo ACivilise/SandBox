@@ -25,7 +25,8 @@ namespace SandBox.Areas.ML.Controllers
         public async Task<IActionResult> FirstPage()
         {
             var model = new FirstPageModel();
-            model.Prediction = await _MLService.TestdeML();
+            _MLService.TrainModel();
+            model.Prediction =  _MLService.PredictFromFile();
             return View(model);
         }
     }

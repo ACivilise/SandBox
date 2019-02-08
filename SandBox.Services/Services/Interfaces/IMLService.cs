@@ -8,6 +8,8 @@ namespace SandBox.Services.Services.Interfaces
 {
     public interface IMLService
     {
-        Task<IrisPrediction> TestdeML();
+        void TrainModel();
+
+        IrisPrediction PredictFromFile();
     }
 }

@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SandBox.DataAccess\SandBox.DataAccess.csproj" />
     <ProjectReference Include="..\SandBox.DTOs\SandBox.DTOs.csproj" />
   </ItemGroup>
 
