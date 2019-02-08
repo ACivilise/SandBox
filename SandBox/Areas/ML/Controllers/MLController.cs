@@ -22,12 +22,19 @@ namespace SandBox.Areas.ML.Controllers
         }
 
         [HttpGet, Route("[area]/[controller]/[action]/")]
-        public async Task<IActionResult> FirstPage()
+        public bool TrainModel()
         {
             var model = new FirstPageModel();
             _MLService.TrainModel();
+            return true;
+        }
+
+        [HttpGet, Route("[area]/[controller]/[action]/")]
+        public IActionResult FirstPage()
+        {
+            var model = new FirstPageModel();
             model.Prediction =  _MLService.PredictFromFile();
-            return View(model);
+            return PartialView(model);
         }
     }
 }

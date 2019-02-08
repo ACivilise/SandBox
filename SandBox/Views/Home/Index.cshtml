@@ -1,10 +1,36 @@
-﻿@{
+﻿@using SandBox.Areas.ML.Controllers;
+@using SandBox.Constantes;
+@{
     ViewData["Title"] = "Home Page";
 }
-
-<a asp-area="@SandBox.Constantes.Areas.ML" asp-controller="ML" asp-action="FirstPage">Première page</a>
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="fonctions"
+     data-url-train-model="@Url.Action(nameof(MLController.TrainModel), "ML", new { area = Areas.ML })"
+     data-url-predict="@Url.Action(nameof(MLController.FirstPage), "ML", new { area = Areas.ML })">
 </div>
+
+<div class="col-xs-12">
+    <div class="form-group col-xs-12">
+        <button type="button"
+                class="btn btn-primary"
+                id="startTrainingBtn">
+            <div id="TrainingSpinner" class="col-xs-12 d-none">
+                <span class="fa fa-spinner fa-spin"></span>
+            </div>
+            <span>Démarrer l'entrainement</span>
+        </button>
+        <label id="MsgOk" class="d-none">Création du modèle de prédiction réussie ! </label>
+        <label id="MsgNotOk" class="d-none">Erreur lors de la création du modèle de prédiction !</label>
+    </div>
+    <div class="form-group col-xs-12">
+        <button type="button"
+                class="btn btn-primary"
+                id="firstPageBtn">
+            <div id="firstPageSpinner" class="col-xs-12 d-none">
+                <span class="fa fa-spinner fa-spin"></span>
+            </div>
+            <span>Première page</span>
+        </button>
+        <div id="firstPageContent"></div>
+    </div>
+</div>
+<script src="~/js/Index/Index.js" asp-append-version="true"></script>
