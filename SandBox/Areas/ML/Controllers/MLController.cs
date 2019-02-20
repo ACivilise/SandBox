@@ -14,11 +14,20 @@ namespace SandBox.Areas.ML.Controllers
     public class MLController : Controller
     {
         private readonly IMLService _MLService;
+        private readonly IGoogleORService _googleORService;
         private readonly ILogger<MLController> _logger;
 
         public MLController(IServiceProvider serviceProvider, ILogger<MLController> logger)
         {
             _MLService = serviceProvider.GetService<IMLService>();
+            _googleORService = serviceProvider.GetService<IGoogleORService>();
+        }
+
+        [HttpGet, Route("[area]/[controller]/[action]/")]
+        public bool TestGoogleOR()
+        {
+            _googleORService.RunLinearProgrammingExample("GLOP_LINEAR_PROGRAMMING");
+            return true;
         }
 
         [HttpGet, Route("[area]/[controller]/[action]/")]

@@ -4,11 +4,23 @@
     ViewData["Title"] = "Home Page";
 }
 <div id="fonctions"
+     data-url-test-google-or="@Url.Action(nameof(MLController.TestGoogleOR), "ML", new { area = Areas.ML })"
      data-url-train-model="@Url.Action(nameof(MLController.TrainModel), "ML", new { area = Areas.ML })"
      data-url-predict="@Url.Action(nameof(MLController.FirstPage), "ML", new { area = Areas.ML })">
 </div>
 
 <div class="col-xs-12">
+    <div class="form-group col-xs-12">
+        <button type="button"
+                class="btn btn-primary"
+                id="startTestGoogleORBtn">
+            <div id="TestGoogleORSpinner" class="col-xs-12 d-none">
+                <span class="fa fa-spinner fa-spin"></span>
+            </div>
+            <span>Tester Google OR Tools</span>
+        </button>
+        <label id="MsgTestGoogleOROk" class="d-none">Création du modèle de prédiction réussie ! </label>
+    </div>
     <div class="form-group col-xs-12">
         <button type="button"
                 class="btn btn-primary"

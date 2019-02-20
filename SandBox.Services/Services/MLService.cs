@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.IO;
 using Microsoft.ML.Core.Data;
+using Microsoft.Data.DataView;
 
 namespace SandBox.Services.Services
 {
@@ -26,7 +27,7 @@ namespace SandBox.Services.Services
             var mlContext = new MLContext();
             // If working in Visual Studio, make sure the 'Copy to Output Directory'
             // property of iris-data.txt is set to 'Copy always'
-            var reader = mlContext.Data.CreateTextReader<IrisData>(separatorChar: ',', hasHeader: false);
+            var reader = mlContext.Data.CreateTextLoader<IrisData>(separatorChar: ',', hasHeader: false);
             var repertoireSortie = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             IDataView trainingDataView = reader.Read($"{repertoireSortie}/DataSources/iris.data");
             // STEP 3: Transform your data and add a learner

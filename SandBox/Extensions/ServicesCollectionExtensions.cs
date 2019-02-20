@@ -15,6 +15,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             return services
+                .AddScoped<IGoogleORService, GoogleORService>()
                 .AddScoped<IMLService, MLService>();
         }
 
