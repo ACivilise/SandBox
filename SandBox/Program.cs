@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using NLog.Web;
+using Serilog;
+using Serilog.Events;
+using System;
 
 namespace SandBox
 {
@@ -9,7 +11,34 @@ namespace SandBox
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            Log.Logger = new LoggerConfiguration()
+          .MinimumLevel.Debug()
+          .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+          .Enrich.FromLogContext()
+          .WriteTo.Console()
+          // Add this line:
+          .WriteTo.File(
+              @"logs/internal-nlog.txt",
+              fileSizeLimitBytes: 1_000_000,
+              rollOnFileSizeLimit: true,
+              shared: true,
+              flushToDiskInterval: TimeSpan.FromSeconds(1))
+          .CreateLogger();
+            try
+            {
+
+                CreateWebHostBuilder(args).Build().Run();
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex, "Host terminated unexpectedly");
+
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+
+            }
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
@@ -24,11 +53,10 @@ namespace SandBox
                     config.SetBasePath(env.ContentRootPath);
                     //config.AddJsonFile($"Settings\\database.json", optional: true, reloadOnChange: true);
                     config.AddJsonFile($"Settings\\settings.json", optional: true, reloadOnChange: true);
-                    env.ConfigureNLog($"Settings\\nlog.config");
                 })
 #if DEBUG
                 .UseUrls("http://localhost:1987")
 #endif
-                .UseNLog();
+                .UseSerilog();
     }
 }

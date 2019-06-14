@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.ML;
+using SandBox.DTOs.DTOs;
 
 namespace SandBox
 {
@@ -34,10 +36,10 @@ namespace SandBox
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
             //augmente le nombre de champs max que peut contenir une form, par défaut cette limite est à 1024
             services.Configure<FormOptions>(options => { options.ValueCountLimit = 10240; });
-
+            //On intègre le modèle au démarage du serveur
+            services.AddPredictionEnginePool<IrisData, IrisPrediction>() .FromFile("/model.save");
             services.AddRepositories().AddServices();
         }
 
