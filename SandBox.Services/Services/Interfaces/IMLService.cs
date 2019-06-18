@@ -10,6 +10,6 @@ namespace SandBox.Services.Services.Interfaces
     {
         void TrainModel();
 
-        IrisPrediction PredictFromFile();
+        ClusterPrediction PredictFromFile();
     }
 }

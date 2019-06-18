@@ -10,6 +10,6 @@ namespace SandBox.Areas.ML.ViewModels
     {
         public string Name { get; set; } = "FirstPage";
 
-        public IrisPrediction Prediction  { get; set; }
+        public ClusterPrediction Prediction  { get; set; }
 }
 }

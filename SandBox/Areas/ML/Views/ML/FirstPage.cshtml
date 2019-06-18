@@ -5,4 +5,4 @@
 }
 <h1>@Model.Name</h1>
 
-<label>Predicted flower type is: @Model.Prediction.PredictedLabels</label>
+<label>Predicted flower type is: @Model.Prediction.Distances.First()</label>
