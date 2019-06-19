@@ -57,6 +57,8 @@ namespace SandBox
 #if DEBUG
                 .UseUrls("http://localhost:1987")
 #endif
+                // supprime l'information du serveur utilisé dans l'entete HTTP
+                .UseKestrel(options => options.AddServerHeader = false)
                 .UseSerilog();
     }
 }
