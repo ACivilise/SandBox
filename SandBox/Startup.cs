@@ -29,19 +29,14 @@ namespace SandBox
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
             });
-
             services.AddMvc(options =>
             {
-                // Filtres globaux : Authorize, Antiforgery (XSRF), Security headers
-                options.Filters.Add(new AuthorizeFilter());
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
                 options.Filters.Add(new SecurityHeadersAttribute());
                 options.Filters.Add(new AutoValidateModelStateAttribute());
@@ -51,7 +46,7 @@ namespace SandBox
                 options.HeaderName = "X-XSRF-TOKEN";
                 // enleve l'information que l'antiforgery est celui d'aspnetcore
                 options.Cookie.Name = "AntiforgeryToken";
-                options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
             });
             // Configuration de Identity (supprimée de cet exemple)
             services.ConfigureApplicationCookie(options =>
@@ -62,10 +57,6 @@ namespace SandBox
                 options.SlidingExpiration = true;
                 options.ExpireTimeSpan = new TimeSpan(1, 0, 0);
             });
-
-
-
-
             //augmente le nombre de champs max que peut contenir une form, par défaut cette limite est à 1024
             services.Configure<FormOptions>(options => { options.ValueCountLimit = 10240; });
             //On intègre le modèle au démarage du serveur
@@ -77,6 +68,8 @@ namespace SandBox
                             //.AddSingleton<IFileProvider, FileProvider>()
                             //.AddTransient<IEmailSender, EmailSender>();
             services.AddRepositories().AddServices();
+
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

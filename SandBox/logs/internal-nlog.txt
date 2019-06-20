@@ -1,0 +1,444 @@
+2019-06-20 15:17:29.141 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 15:17:29.613 +02:00 [FTL] Application startup exception
+System.InvalidOperationException: Application is running inside IIS process but is not configured to use IIS server.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-06-20 16:04:58.093 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:04:58.397 +02:00 [FTL] Application startup exception
+System.InvalidOperationException: Application is running inside IIS process but is not configured to use IIS server.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-06-20 16:05:57.387 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:05:57.635 +02:00 [FTL] Application startup exception
+System.InvalidOperationException: Application is running inside IIS process but is not configured to use IIS server.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-06-20 16:06:30.062 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:06:30.219 +02:00 [FTL] Application startup exception
+System.InvalidOperationException: Application is running inside IIS process but is not configured to use IIS server.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-06-20 16:06:49.622 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:06:49.796 +02:00 [FTL] Application startup exception
+System.InvalidOperationException: Application is running inside IIS process but is not configured to use IIS server.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-06-20 16:08:43.865 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:11:50.049 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:11:50.261 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-20 16:11:50.353 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:11:50.390 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:11:50.403 +02:00 [INF] Authorization failed.
+2019-06-20 16:11:50.408 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:11:50.415 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:11:50.428 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 31.470200000000002ms
+2019-06-20 16:11:50.434 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:11:50.543 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.NoCacheMiddleware.Invoke(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\NoCacheMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\SecurityHeadersMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:11:50.664 +02:00 [INF] Request finished in 616.4225ms 500 text/html; charset=utf-8
+2019-06-20 16:11:50.951 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:11:50.980 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:11:50.988 +02:00 [INF] Request finished in 36.5663ms 200 image/x-icon
+2019-06-20 16:12:12.308 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:12:16.548 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:12:16.582 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-20 16:12:16.636 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:16.659 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:12:16.673 +02:00 [INF] Authorization failed.
+2019-06-20 16:12:16.678 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:12:16.685 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:12:16.694 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 28.7649ms
+2019-06-20 16:12:16.701 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:16.762 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\SecurityHeadersMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:12:16.892 +02:00 [INF] Request finished in 344.3786ms 500 text/html; charset=utf-8
+2019-06-20 16:12:17.250 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:12:17.270 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:12:17.280 +02:00 [INF] Request finished in 29.4294ms 200 image/x-icon
+2019-06-20 16:12:39.552 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:12:47.013 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:12:47.047 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-20 16:12:47.101 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:47.122 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:12:47.134 +02:00 [INF] Authorization failed.
+2019-06-20 16:12:47.137 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:12:47.144 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:12:47.152 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 26.6173ms
+2019-06-20 16:12:47.158 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:47.162 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:12:47.248 +02:00 [INF] Request finished in 236.7996ms 500 text/html; charset=utf-8
+2019-06-20 16:12:47.408 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:12:47.426 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:12:47.436 +02:00 [INF] Request finished in 27.7543ms 200 image/x-icon
+2019-06-20 16:12:48.556 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:12:48.557 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:48.559 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:12:48.563 +02:00 [INF] Authorization failed.
+2019-06-20 16:12:48.565 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:12:48.570 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:12:48.573 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 10.7048ms
+2019-06-20 16:12:48.574 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:48.577 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:12:48.610 +02:00 [INF] Request finished in 54.0478ms 500 text/html; charset=utf-8
+2019-06-20 16:12:48.772 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:12:48.775 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:12:48.784 +02:00 [INF] Request finished in 12.2605ms 200 image/x-icon
+2019-06-20 16:12:49.406 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:12:49.408 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:49.410 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:12:49.412 +02:00 [INF] Authorization failed.
+2019-06-20 16:12:49.414 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:12:49.419 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:12:49.421 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 8.8185ms
+2019-06-20 16:12:49.422 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:49.425 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:12:49.469 +02:00 [INF] Request finished in 62.9176ms 500 text/html; charset=utf-8
+2019-06-20 16:12:49.618 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:12:49.620 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:12:49.623 +02:00 [INF] Request finished in 5.0935ms 200 image/x-icon
+2019-06-20 16:12:49.994 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:12:49.998 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:50.003 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:12:50.005 +02:00 [INF] Authorization failed.
+2019-06-20 16:12:50.007 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:12:50.009 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:12:50.013 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 8.2735ms
+2019-06-20 16:12:50.017 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:50.019 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:12:50.054 +02:00 [INF] Request finished in 60.1606ms 500 text/html; charset=utf-8
+2019-06-20 16:12:50.233 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:12:50.236 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:12:50.240 +02:00 [INF] Request finished in 7.0083ms 200 image/x-icon
+2019-06-20 16:12:51.374 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:12:51.376 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:51.380 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:12:51.386 +02:00 [INF] Authorization failed.
+2019-06-20 16:12:51.387 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:12:51.390 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:12:51.392 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 6.9088ms
+2019-06-20 16:12:51.396 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:12:51.399 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:12:51.419 +02:00 [INF] Request finished in 45.098ms 500 text/html; charset=utf-8
+2019-06-20 16:15:55.508 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:17:35.649 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:17:41.758 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:17:41.813 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-20 16:17:41.874 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:17:41.901 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:17:41.915 +02:00 [INF] Authorization failed.
+2019-06-20 16:17:41.920 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:17:41.926 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:17:41.940 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 34.452200000000005ms
+2019-06-20 16:17:41.949 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:17:42.047 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at SandBox.Middlewares.NoCacheMiddleware.Invoke(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\NoCacheMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\SecurityHeadersMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:17:42.180 +02:00 [INF] Request finished in 423.4467ms 500 text/html; charset=utf-8
+2019-06-20 16:17:42.524 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:17:42.547 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:17:42.558 +02:00 [INF] Request finished in 34.752ms 200 image/x-icon
+2019-06-20 16:17:59.829 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:18:08.030 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:18:08.070 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-20 16:18:08.120 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:18:08.138 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:18:08.149 +02:00 [INF] Authorization failed.
+2019-06-20 16:18:08.152 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:18:08.157 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:18:08.168 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 25.8578ms
+2019-06-20 16:18:08.173 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:18:08.213 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\SecurityHeadersMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:18:08.300 +02:00 [INF] Request finished in 272.1383ms 500 text/html; charset=utf-8
+2019-06-20 16:18:08.979 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:18:08.994 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:18:09.002 +02:00 [INF] Request finished in 23.2051ms 200 image/x-icon
+2019-06-20 16:18:10.646 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:18:10.648 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:18:10.650 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:18:10.654 +02:00 [INF] Authorization failed.
+2019-06-20 16:18:10.655 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:18:10.657 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:18:10.659 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 5.8645000000000005ms
+2019-06-20 16:18:10.661 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:18:10.721 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\SecurityHeadersMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:18:10.743 +02:00 [INF] Request finished in 96.1734ms 500 text/html; charset=utf-8
+2019-06-20 16:18:10.844 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:18:10.849 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:18:10.853 +02:00 [INF] Request finished in 9.3979ms 200 image/x-icon
+2019-06-20 16:18:29.599 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:18:39.810 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:18:39.841 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-20 16:18:39.898 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:18:39.924 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:18:39.936 +02:00 [INF] Authorization failed.
+2019-06-20 16:18:39.940 +02:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2019-06-20 16:18:39.947 +02:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2019-06-20 16:18:39.956 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 28.5916ms
+2019-06-20 16:18:39.962 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:18:39.966 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAlwaysRunResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 16:18:40.041 +02:00 [INF] Request finished in 231.8049ms 500 text/html; charset=utf-8
+2019-06-20 16:18:40.219 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:18:40.237 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:18:40.249 +02:00 [INF] Request finished in 30.2546ms 200 image/x-icon
+2019-06-20 16:24:17.634 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:24:29.314 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:24:29.345 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-20 16:24:29.389 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:24:29.430 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:24:29.574 +02:00 [INF] Executing action method SandBox.Controllers.HomeController.Index (SandBox) - Validation state: "Valid"
+2019-06-20 16:24:31.543 +02:00 [INF] Executed action method SandBox.Controllers.HomeController.Index (SandBox), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1957.9396000000002ms.
+2019-06-20 16:24:31.588 +02:00 [INF] Executing ViewResult, running view Index.
+2019-06-20 16:24:31.724 +02:00 [INF] Executed ViewResult - view Index executed in 163.9939ms.
+2019-06-20 16:24:31.726 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 2293.4583000000002ms
+2019-06-20 16:24:31.728 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:24:31.738 +02:00 [INF] Request finished in 2425.4942ms 200 text/html; charset=utf-8
+2019-06-20 16:24:31.774 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/js/Index/Index.js?v=FaeAt1AqE3qmAC9f7n9r5qwjDRlvspxSEsWb9-UOvw4  
+2019-06-20 16:24:31.778 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/lib/signalr/dist/browser/signalr.js  
+2019-06-20 16:24:31.780 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/css/site.css  
+2019-06-20 16:24:31.780 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/js/chat.js?v=8TmFKEZDKX73UfBm5ItWkiZlZn0fBrRDTqvFadRPhmk  
+2019-06-20 16:24:31.802 +02:00 [INF] Request finished in 23.9649ms 404 
+2019-06-20 16:24:31.807 +02:00 [INF] Sending file. Request path: '/js/Index/Index.js'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\js\Index\Index.js'
+2019-06-20 16:24:31.807 +02:00 [INF] Sending file. Request path: '/js/chat.js'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\js\chat.js'
+2019-06-20 16:24:31.814 +02:00 [INF] Request finished in 50.0863ms 200 application/javascript
+2019-06-20 16:24:31.816 +02:00 [INF] Request finished in 36.0362ms 200 application/javascript
+2019-06-20 16:24:31.820 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\css\site.css'
+2019-06-20 16:24:31.829 +02:00 [INF] Request finished in 49.2463ms 200 text/css
+2019-06-20 16:24:31.932 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/lib/signalr/dist/browser/signalr.js  
+2019-06-20 16:24:31.935 +02:00 [INF] Request finished in 2.4704ms 404 
+2019-06-20 16:24:31.984 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:24:31.987 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:24:31.989 +02:00 [INF] Request finished in 5.1146ms 200 image/x-icon
+2019-06-20 16:28:40.029 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-20 16:28:45.404 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-20 16:28:45.433 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-20 16:28:45.482 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:28:45.512 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-20 16:28:45.595 +02:00 [INF] Executing action method SandBox.Controllers.HomeController.Index (SandBox) - Validation state: "Valid"
+2019-06-20 16:29:00.480 +02:00 [INF] Executed action method SandBox.Controllers.HomeController.Index (SandBox), returned result Microsoft.AspNetCore.Mvc.ViewResult in 14874.2081ms.
+2019-06-20 16:29:00.535 +02:00 [INF] Executing ViewResult, running view Index.
+2019-06-20 16:29:00.640 +02:00 [INF] Executed ViewResult - view Index executed in 141.14770000000001ms.
+2019-06-20 16:29:00.643 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 15128.7769ms
+2019-06-20 16:29:00.644 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-20 16:29:00.651 +02:00 [INF] Request finished in 15248.8366ms 200 text/html; charset=utf-8
+2019-06-20 16:29:00.715 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/lib/signalr/dist/browser/signalr.js  
+2019-06-20 16:29:00.741 +02:00 [INF] Request finished in 26.2142ms 404 
+2019-06-20 16:29:00.926 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/lib/signalr/dist/browser/signalr.js  
+2019-06-20 16:29:00.928 +02:00 [INF] Request finished in 2.8063ms 404 
+2019-06-20 16:29:00.939 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:1987/chatHub/negotiate text/plain;charset=UTF-8 0
+2019-06-20 16:29:00.941 +02:00 [INF] Request finished in 1.8352ms 404 
+2019-06-20 16:29:00.971 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-20 16:29:00.991 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-20 16:29:00.997 +02:00 [INF] Request finished in 25.9376ms 200 image/x-icon
+2019-06-20 16:29:04.410 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/ML/ML/TestGoogleOR  
+2019-06-20 16:29:04.414 +02:00 [INF] Executing endpoint 'SandBox.Areas.ML.Controllers.MLController.TestGoogleOR (SandBox)'
+2019-06-20 16:29:04.418 +02:00 [INF] Route matched with {area = "ML", action = "TestGoogleOR", controller = "ML"}. Executing action SandBox.Areas.ML.Controllers.MLController.TestGoogleOR (SandBox)
+2019-06-20 16:29:04.447 +02:00 [INF] Executing action method SandBox.Areas.ML.Controllers.MLController.TestGoogleOR (SandBox) - Validation state: "Valid"
+2019-06-20 16:29:04.579 +02:00 [INF] Executed action method SandBox.Areas.ML.Controllers.MLController.TestGoogleOR (SandBox), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 128.9528ms.
+2019-06-20 16:29:04.586 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2019-06-20 16:29:04.690 +02:00 [INF] Executed action SandBox.Areas.ML.Controllers.MLController.TestGoogleOR (SandBox) in 268.7474ms
+2019-06-20 16:29:04.694 +02:00 [INF] Executed endpoint 'SandBox.Areas.ML.Controllers.MLController.TestGoogleOR (SandBox)'
+2019-06-20 16:29:04.696 +02:00 [INF] Request finished in 285.6657ms 200 application/json; charset=utf-8
+2019-06-20 16:29:05.526 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/ML/ML/TrainModel  
+2019-06-20 16:29:05.530 +02:00 [INF] Executing endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-20 16:29:05.533 +02:00 [INF] Route matched with {area = "ML", action = "TrainModel", controller = "ML"}. Executing action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)
+2019-06-20 16:29:05.556 +02:00 [INF] Executing action method SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) - Validation state: "Valid"
+2019-06-20 16:29:06.349 +02:00 [INF] Executed action method SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 789.7577ms.
+2019-06-20 16:29:06.352 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2019-06-20 16:29:06.353 +02:00 [INF] Executed action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) in 818.61200000000008ms
+2019-06-20 16:29:06.355 +02:00 [INF] Executed endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-20 16:29:06.356 +02:00 [INF] Request finished in 830.5562ms 200 application/json; charset=utf-8
+2019-06-20 16:29:07.821 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/ML/ML/FirstPage  
+2019-06-20 16:29:07.823 +02:00 [INF] Executing endpoint 'SandBox.Areas.ML.Controllers.MLController.FirstPage (SandBox)'
+2019-06-20 16:29:07.826 +02:00 [INF] Route matched with {area = "ML", action = "FirstPage", controller = "ML"}. Executing action SandBox.Areas.ML.Controllers.MLController.FirstPage (SandBox)
+2019-06-20 16:29:07.852 +02:00 [INF] Executing action method SandBox.Areas.ML.Controllers.MLController.FirstPage (SandBox) - Validation state: "Valid"
+2019-06-20 16:29:08.022 +02:00 [INF] Executed action method SandBox.Areas.ML.Controllers.MLController.FirstPage (SandBox), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 167.5755ms.
+2019-06-20 16:29:08.030 +02:00 [INF] Executing PartialViewResult, running view FirstPage.
+2019-06-20 16:29:08.034 +02:00 [INF] Executed PartialViewResult - view null executed in 6.6757ms.
+2019-06-20 16:29:08.037 +02:00 [INF] Executed action SandBox.Areas.ML.Controllers.MLController.FirstPage (SandBox) in 208.34480000000002ms
+2019-06-20 16:29:08.038 +02:00 [INF] Executed endpoint 'SandBox.Areas.ML.Controllers.MLController.FirstPage (SandBox)'
+2019-06-20 16:29:08.040 +02:00 [INF] Request finished in 218.9897ms 200 text/html; charset=utf-8

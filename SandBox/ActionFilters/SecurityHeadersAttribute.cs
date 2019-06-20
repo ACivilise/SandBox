@@ -16,18 +16,29 @@ namespace SandBox.ActionFilters
             var result = context.Result;
             if (result is ViewResult)
             {
-                IHeaderDictionary headers = context.HttpContext.Response.Headers;
-
-                if (!headers.ContainsKey("X-Frame-Options")) headers.Add("X-Frame-Options", "SAMEORIGIN");
-
-                var csp = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';"
-                          + " img-src 'self' data: blob:; font-src 'self' https://fonts.gstatic.com;";
+                if (!context.HttpContext.Response.Headers.ContainsKey("X-Content-Type-Options"))
+                {
+                    context.HttpContext.Response.Headers.Add("X-Content-Type-Options", "nosniff");
+                }
+                if (!context.HttpContext.Response.Headers.ContainsKey("X-Frame-Options"))
+                {
+                    context.HttpContext.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
+                }
+                if (!context.HttpContext.Response.Headers.ContainsKey("X-XSS-Protection"))
+                {
+                    context.HttpContext.Response.Headers.Add("X-XSS-Protection", "1; mode=block");
+                }
+                var csp = "default-src 'self' * 'unsafe-inline'; script-src 'self' https://cdnjs.cloudflare.com https://cdn.datatables.net/ https://unpkg.com 'unsafe-inline'; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://code.jquery.com 'unsafe-inline'; img-src 'self' https://cdnjs.cloudflare.com data:;";
                 // once for standards compliant browsers
-                if (!headers.ContainsKey("Content-Security-Policy"))
-                    headers.Add("Content-Security-Policy", csp);
+                if (!context.HttpContext.Response.Headers.ContainsKey("Content-Security-Policy"))
+                {
+                    context.HttpContext.Response.Headers.Add("Content-Security-Policy", csp);
+                }
                 // and once again for IE
-                if (!headers.ContainsKey("X-Content-Security-Policy"))
-                    headers.Add("X-Content-Security-Policy", csp);
+                if (!context.HttpContext.Response.Headers.ContainsKey("X-Content-Security-Policy"))
+                {
+                    context.HttpContext.Response.Headers.Add("X-Content-Security-Policy", csp);
+                }
             }
         }
     }
