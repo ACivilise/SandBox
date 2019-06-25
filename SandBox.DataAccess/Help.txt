@@ -1,0 +1,15 @@
+﻿// ajout dans Creation.cs dans le Up pour l'ajout de PS: 
+    var repertoireSortie = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+    migrationBuilder.Sql(System.IO.File.ReadAllText(repertoireSortie + "\\Migrations\\PS_ArboAffectation.sql"));
+	migrationBuilder.Sql("Delete FROM LignesHeures"); 
+
+Créer une nouvelle migration :                              
+dotnet ef migrations -s ..\SandBox\ add creation -c SandBoxDbContext --verbose
+
+
+Supprimer une migration : 
+1 Supprimer les fichiers
+2 dotnet ef migrations -s ..\SandBox\ remove
+
+Delete [__EFMigrationsHistory]
+Insert [__EFMigrationsHistory] (MigrationId, ProductVersion) values('20190116160640_Creation', '2.0.2-rtm-10011')

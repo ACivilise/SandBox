@@ -29,6 +29,26 @@ namespace SandBox
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddEntityFrameworkInMemoryDatabase();
+
+            ConfigureAuth(services);
+            //augmente le nombre de champs max que peut contenir une form, par défaut cette limite est à 1024
+            services.Configure<FormOptions>(options => { options.ValueCountLimit = 10240; });
+            //On intègre le modèle au démarage du serveur
+            services.AddPredictionEnginePool<IrisData, ClusterPrediction>().FromFile("/model.save");
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>()
+                            .AddSingleton<IActionContextAccessor, ActionContextAccessor>()
+                            .AddSingleton<IContentTypeProvider, FileExtensionContentTypeProvider>();
+            //.AddSingleton<IFileProvider, FileProvider>()
+            //.AddTransient<IEmailSender, EmailSender>();
+            services.AddRepositories().AddServices();
+
+            services.AddSignalR();
+        }
+
+        public virtual void ConfigureAuth(IServiceCollection services)
+        {
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -42,7 +62,8 @@ namespace SandBox
                 options.Filters.Add(new AutoValidateModelStateAttribute());
             }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddAntiforgery(options => {
+            services.AddAntiforgery(options =>
+            {
                 options.HeaderName = "X-XSRF-TOKEN";
                 // enleve l'information que l'antiforgery est celui d'aspnetcore
                 options.Cookie.Name = "AntiforgeryToken";
@@ -57,19 +78,6 @@ namespace SandBox
                 options.SlidingExpiration = true;
                 options.ExpireTimeSpan = new TimeSpan(1, 0, 0);
             });
-            //augmente le nombre de champs max que peut contenir une form, par défaut cette limite est à 1024
-            services.Configure<FormOptions>(options => { options.ValueCountLimit = 10240; });
-            //On intègre le modèle au démarage du serveur
-            services.AddPredictionEnginePool<IrisData, ClusterPrediction>() .FromFile("/model.save");
-
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>()
-                            .AddSingleton<IActionContextAccessor, ActionContextAccessor>()
-                            .AddSingleton<IContentTypeProvider, FileExtensionContentTypeProvider>();
-                            //.AddSingleton<IFileProvider, FileProvider>()
-                            //.AddTransient<IEmailSender, EmailSender>();
-            services.AddRepositories().AddServices();
-
-            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

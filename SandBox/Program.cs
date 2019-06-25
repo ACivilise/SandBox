@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using SandBox.DataAccess.DBContext;
 using Serilog;
 using Serilog.Events;
 using System;
@@ -22,12 +24,22 @@ namespace SandBox
               fileSizeLimitBytes: 1_000_000,
               rollOnFileSizeLimit: true,
               shared: true,
-              flushToDiskInterval: TimeSpan.FromSeconds(1))
-          .CreateLogger();
+              flushToDiskInterval: TimeSpan.FromSeconds(1)).CreateLogger();
+
+            Log.Logger.Information("Lancement de l'application");
             try
             {
 
-                CreateWebHostBuilder(args).Build().Run();
+                var host =  CreateWebHostBuilder(args).Build();
+                using (var scope = host.Services.CreateScope())
+                {
+                    var services = scope.ServiceProvider;
+                    Log.Logger.Information("Lancement des migrations");
+                    services.MigrateDb();
+                    Log.Logger.Information("Fin des migrations");
+                    services.SeedData();
+                }
+                host.Run();
             }
             catch (Exception ex)
             {
