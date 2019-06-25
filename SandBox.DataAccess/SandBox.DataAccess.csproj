@@ -60,8 +60,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\Geographie\" />
     <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SandBox.Constantes\SandBox.Constantes.csproj" />
   </ItemGroup>
 
 </Project>

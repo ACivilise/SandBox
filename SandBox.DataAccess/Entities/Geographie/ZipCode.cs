@@ -25,13 +25,13 @@ namespace SandBox.DataAccess.Entities.Geographie
         /// Obtient ou défini le pays
         /// </summary>
         [Required]
-        public int IdPays { get; set; }
-        [ForeignKey(nameof(IdPays))]
-        public Country Pays { get; set; }
+        public int IdCountry { get; set; }
+        [ForeignKey(nameof(IdCountry))]
+        public Country Country { get; set; }
 
         /// <summary>
         /// Obtient ou défini la liste des villes associées à ce code postal
         /// </summary>
-        public virtual List<City> Villes { get; } = new List<City>();
+        public virtual List<City> Cities { get; } = new List<City>();
     }
 }

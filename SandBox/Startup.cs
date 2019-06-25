@@ -69,7 +69,6 @@ namespace SandBox
                 options.Filters.Add(new SecurityHeadersAttribute());
                 options.Filters.Add(new AutoValidateModelStateAttribute());
             }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
             services.AddAntiforgery(options =>
             {
                 options.HeaderName = "X-XSRF-TOKEN";
@@ -102,11 +101,9 @@ namespace SandBox
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
             // Port ssl configurable via la variable d'environnement : ASPNETCORE_https_port
             app.UseHttpsRedirection();
             app.UseMiddleware<SecurityHeadersMiddleware>();
-
             // Fichiers statiques non accessibles si l'url commence par /api
             app.UseStaticFiles(new StaticFileOptions()
             {
@@ -122,11 +119,8 @@ namespace SandBox
                 }
             });
             app.UseMiddleware<NoCacheMiddleware>();
-
             // Authentification et MVC
             app.UseAuthentication();
-
-
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

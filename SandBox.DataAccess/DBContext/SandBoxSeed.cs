@@ -100,7 +100,7 @@ namespace SandBox.DataAccess.DBContext
                     var region = new Region
                     {
                         Code = jsonRegion.Code,
-                        Pays = france,
+                        Country = france,
                         Libelle = jsonRegion.Title,
                     };
                     france.Regions.Add(region);
@@ -208,7 +208,7 @@ namespace SandBox.DataAccess.DBContext
                         codePostal = new ZipCode
                         {
                             Libelle = city.Code_postal,
-                            IdPays = idfrance
+                            IdCountry = idfrance
                         };
                         codesPostauxToAdd.Add(codePostal);
                     }
@@ -242,7 +242,7 @@ namespace SandBox.DataAccess.DBContext
                             currentDepartmentCode = newDepartmentCode;
                             idDepartment = await Context.Departements.Where(d => d.Code == newDepartmentCode).Select(x => x.Id).FirstOrDefaultAsync();
                         }
-                        if (idDepartment.HasValue && idDepartment.Value > 0 && !villesToAdd.Any(x => x.Libelle.ToLower() == cityName.ToLower() && x.CodePostal.Libelle == codePostal.Libelle))
+                        if (idDepartment.HasValue && idDepartment.Value > 0 && !villesToAdd.Any(x => x.Libelle.ToLower() == cityName.ToLower() && x.ZipCode.Libelle == codePostal.Libelle))
                         {
                             _logger.LogInformation($"Ville ajoutée : {cityName}");
                             _logger.LogInformation($"Avec le code postale : {codePostal.Libelle}");
@@ -250,10 +250,10 @@ namespace SandBox.DataAccess.DBContext
                             var newCity = new City
                             {
                                 Libelle = cityName,
-                                CodePostal = codePostal,
+                                ZipCode = codePostal,
                                 CodeINSEE = codeInsee,
                                 IdDepartement = idDepartment.Value,
-                                IdPays = idfrance
+                                IdCountry = idfrance
                             };
                             villesToAdd.Add(newCity);
                         }

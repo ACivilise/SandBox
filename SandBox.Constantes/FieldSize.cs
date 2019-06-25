@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SandBox.DataAccess
+namespace SandBox.Constantes
 {
-    public static class Constantes
+    public static class FieldsSizes
     {
         public const int TexteCourt = 50;
         public const int TexteMoyen = 255;

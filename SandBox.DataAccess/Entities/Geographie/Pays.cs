@@ -34,11 +34,11 @@ namespace SandBox.DataAccess.Entities.Geographie
         /// <summary>
         /// Obtient ou défini la liste des Code Postaux associés à ce pays
         /// </summary>
-        public virtual List<ZipCode> CodePostaux { get; } = new List<ZipCode>();
+        public virtual List<ZipCode> ZipCodes { get; } = new List<ZipCode>();
 
         /// <summary>
         /// Obtient ou défini la liste des Villes associés à ce pays
         /// </summary>
-        public virtual List<City> Villes { get; } = new List<City>();
+        public virtual List<City> Cities { get; } = new List<City>();
     }
 }
