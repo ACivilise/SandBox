@@ -27,7 +27,7 @@ namespace SandBox.DataAccess.Entities.Geographie
         /// <summary>
         /// Obtient ou défini la liste des villes associées à ce département
         /// </summary>
-        public virtual List<City> Villes { get; } = new List<City>();
+        public virtual List<City> Cities { get; } = new List<City>();
 
     }
 }

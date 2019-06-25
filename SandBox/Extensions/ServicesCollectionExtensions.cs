@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using SandBox.DataAccess.Repositories.Weather;
+using SandBox.DataAccess.Repositories.Weather.Interfaces;
 using SandBox.Services.Services;
 using SandBox.Services.Services.Interfaces;
 
@@ -15,18 +16,19 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             return services
+                .AddScoped<IWeatherService, WeatherService>()
                 .AddScoped<IGoogleORService, GoogleORService>()
                 .AddScoped<IMLService, MLService>();
         }
 
-        public static IServiceCollection AddAutoMapperProfiles(this IServiceCollection services)
-        {
-            Mapper.Initialize(cfg =>
-            {
-                //cfg.AddProfile<DTOsProfile>();
-            });
+        //public static IServiceCollection AddAutoMapperProfiles(this IServiceCollection services)
+        //{
+        //    Mapper.Initialize(cfg =>
+        //    {
+        //        cfg.AddProfile<DTOsProfile>();
+        //    });
 
-            return services;
-        }
+        //    return services;
+        //}
     }
 }

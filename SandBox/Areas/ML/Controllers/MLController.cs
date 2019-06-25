@@ -14,6 +14,7 @@ namespace SandBox.Areas.ML.Controllers
     public class MLController : Controller
     {
         private readonly IMLService _MLService;
+        private readonly IWeatherService _weatherService;
         private readonly IGoogleORService _googleORService;
         private readonly ILogger<MLController> _logger;
 
@@ -21,6 +22,7 @@ namespace SandBox.Areas.ML.Controllers
         {
             _MLService = serviceProvider.GetService<IMLService>();
             _googleORService = serviceProvider.GetService<IGoogleORService>();
+            _weatherService = serviceProvider.GetService<IWeatherService>();
         }
 
         [HttpGet, Route("[area]/[controller]/[action]/")]
@@ -31,9 +33,10 @@ namespace SandBox.Areas.ML.Controllers
         }
 
         [HttpGet, Route("[area]/[controller]/[action]/")]
-        public bool TrainModel()
+        public async Task<bool> TrainModel()
         {
             var model = new FirstPageModel();
+            await _weatherService.TrainModel();
             _MLService.TrainModel();
             return true;
         }

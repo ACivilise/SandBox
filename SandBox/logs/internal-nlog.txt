@@ -10110,3 +10110,330 @@ System.AggregateException: One or more errors occurred. (Unexpected character en
 2019-06-25 13:46:24.247 +02:00 [INF] Début du seed Departments
 2019-06-25 13:46:24.253 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
 2019-06-25 13:46:24.295 +02:00 [INF] Saved 107 entities to in-memory store.
+2019-06-25 14:43:10.425 +02:00 [INF] Lancement de l'application
+2019-06-25 14:43:13.391 +02:00 [INF] Lancement des migrations
+2019-06-25 14:43:14.271 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'SandBoxDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=SandBox 
+2019-06-25 14:43:14.280 +02:00 [INF] Fin des migrations
+2019-06-25 14:43:14.286 +02:00 [INF] Début du Seed
+2019-06-25 14:43:14.288 +02:00 [INF] Début du seed Countries
+2019-06-25 14:43:14.486 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.countries.json
+2019-06-25 14:43:14.758 +02:00 [INF] Saved 33 entities to in-memory store.
+2019-06-25 14:43:14.771 +02:00 [INF] Début du seed Region
+2019-06-25 14:43:14.778 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:43:14.929 +02:00 [INF] Saved 23 entities to in-memory store.
+2019-06-25 14:43:14.932 +02:00 [INF] Début du seed Departments
+2019-06-25 14:43:14.936 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:43:14.976 +02:00 [INF] Saved 107 entities to in-memory store.
+2019-06-25 14:43:18.810 +02:00 [INF] Saved 7440 entities to in-memory store.
+2019-06-25 14:43:18.900 +02:00 [INF] Fin du Seed
+2019-06-25 14:43:18.989 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-25 14:44:37.292 +02:00 [INF] Lancement de l'application
+2019-06-25 14:44:39.464 +02:00 [INF] Lancement des migrations
+2019-06-25 14:44:40.265 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'SandBoxDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=SandBox 
+2019-06-25 14:44:40.272 +02:00 [INF] Fin des migrations
+2019-06-25 14:44:40.283 +02:00 [INF] Début du Seed
+2019-06-25 14:44:40.285 +02:00 [INF] Début du seed Countries
+2019-06-25 14:44:40.429 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.countries.json
+2019-06-25 14:44:40.681 +02:00 [INF] Saved 33 entities to in-memory store.
+2019-06-25 14:44:40.691 +02:00 [INF] Début du seed Region
+2019-06-25 14:44:40.698 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:44:40.831 +02:00 [INF] Saved 23 entities to in-memory store.
+2019-06-25 14:44:40.834 +02:00 [INF] Début du seed Departments
+2019-06-25 14:44:40.839 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:44:40.888 +02:00 [INF] Saved 107 entities to in-memory store.
+2019-06-25 14:44:44.065 +02:00 [INF] Saved 7440 entities to in-memory store.
+2019-06-25 14:44:44.123 +02:00 [INF] Fin du Seed
+2019-06-25 14:44:44.202 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-25 14:45:41.917 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-25 14:45:41.945 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-25 14:45:42.009 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-25 14:45:42.049 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-25 14:45:42.171 +02:00 [INF] Executing action method SandBox.Controllers.HomeController.Index (SandBox) - Validation state: "Valid"
+2019-06-25 14:45:46.003 +02:00 [INF] Executed action method SandBox.Controllers.HomeController.Index (SandBox), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3824.9562ms.
+2019-06-25 14:45:46.054 +02:00 [INF] Executing ViewResult, running view Index.
+2019-06-25 14:45:46.218 +02:00 [INF] Executed ViewResult - view Index executed in 194.8163ms.
+2019-06-25 14:45:46.221 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 4168.5649ms
+2019-06-25 14:45:46.224 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-25 14:45:46.238 +02:00 [INF] Request finished in 4321.0119ms 200 text/html; charset=utf-8
+2019-06-25 14:45:46.385 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/lib/signalr/dist/browser/signalr.js  
+2019-06-25 14:45:46.398 +02:00 [INF] Request finished in 12.6424ms 404 
+2019-06-25 14:45:46.599 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/lib/signalr/dist/browser/signalr.js  
+2019-06-25 14:45:46.603 +02:00 [INF] Request finished in 3.9333ms 404 
+2019-06-25 14:45:46.621 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:1987/chatHub/negotiate text/plain;charset=UTF-8 0
+2019-06-25 14:45:46.622 +02:00 [INF] Request finished in 1.6384ms 404 
+2019-06-25 14:45:48.544 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/ML/ML/TrainModel  
+2019-06-25 14:45:48.546 +02:00 [INF] Executing endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:45:48.559 +02:00 [INF] Route matched with {area = "ML", action = "TrainModel", controller = "ML"}. Executing action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)
+2019-06-25 14:45:48.597 +02:00 [INF] Executing action method SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) - Validation state: "Valid"
+2019-06-25 14:46:05.819 +02:00 [INF] Executed action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) in 17257.5ms
+2019-06-25 14:46:05.824 +02:00 [INF] Executed endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:46:05.957 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SandBox.Areas.ML.Controllers.MLController.TrainModel() in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Areas\ML\Controllers\MLController.cs:line 40
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.NoCacheMiddleware.Invoke(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\NoCacheMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\SecurityHeadersMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-25 14:46:17.559 +02:00 [INF] Request finished in 29015.1832ms 500 text/html; charset=utf-8
+2019-06-25 14:47:43.769 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/ML/ML/TrainModel  
+2019-06-25 14:47:43.772 +02:00 [INF] Executing endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:47:43.773 +02:00 [INF] Route matched with {area = "ML", action = "TrainModel", controller = "ML"}. Executing action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)
+2019-06-25 14:47:43.802 +02:00 [INF] Executing action method SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) - Validation state: "Valid"
+2019-06-25 14:47:46.911 +02:00 [INF] Executed action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) in 3136.2303ms
+2019-06-25 14:47:46.916 +02:00 [INF] Executed endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:47:47.021 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SandBox.Areas.ML.Controllers.MLController.TrainModel() in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Areas\ML\Controllers\MLController.cs:line 40
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.NoCacheMiddleware.Invoke(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\NoCacheMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\SecurityHeadersMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-25 14:49:40.557 +02:00 [INF] Lancement de l'application
+2019-06-25 14:49:43.471 +02:00 [INF] Lancement des migrations
+2019-06-25 14:49:44.283 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'SandBoxDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=SandBox 
+2019-06-25 14:49:44.290 +02:00 [INF] Fin des migrations
+2019-06-25 14:49:44.293 +02:00 [INF] Début du Seed
+2019-06-25 14:49:44.294 +02:00 [INF] Début du seed Countries
+2019-06-25 14:49:44.434 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.countries.json
+2019-06-25 14:49:44.730 +02:00 [INF] Saved 33 entities to in-memory store.
+2019-06-25 14:49:44.742 +02:00 [INF] Début du seed Region
+2019-06-25 14:49:44.750 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:49:44.891 +02:00 [INF] Saved 23 entities to in-memory store.
+2019-06-25 14:49:44.893 +02:00 [INF] Début du seed Departments
+2019-06-25 14:49:44.900 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:49:44.943 +02:00 [INF] Saved 107 entities to in-memory store.
+2019-06-25 14:49:48.079 +02:00 [INF] Saved 7440 entities to in-memory store.
+2019-06-25 14:49:48.143 +02:00 [INF] Fin du Seed
+2019-06-25 14:49:48.242 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-25 14:50:14.026 +02:00 [INF] Lancement de l'application
+2019-06-25 14:50:16.340 +02:00 [INF] Lancement des migrations
+2019-06-25 14:50:17.142 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'SandBoxDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=SandBox 
+2019-06-25 14:50:17.150 +02:00 [INF] Fin des migrations
+2019-06-25 14:50:17.155 +02:00 [INF] Début du Seed
+2019-06-25 14:50:17.156 +02:00 [INF] Début du seed Countries
+2019-06-25 14:50:17.317 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.countries.json
+2019-06-25 14:50:17.586 +02:00 [INF] Saved 33 entities to in-memory store.
+2019-06-25 14:50:17.597 +02:00 [INF] Début du seed Region
+2019-06-25 14:50:17.605 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:50:17.727 +02:00 [INF] Saved 23 entities to in-memory store.
+2019-06-25 14:50:17.730 +02:00 [INF] Début du seed Departments
+2019-06-25 14:50:17.738 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:50:17.784 +02:00 [INF] Saved 107 entities to in-memory store.
+2019-06-25 14:50:20.904 +02:00 [INF] Saved 7440 entities to in-memory store.
+2019-06-25 14:50:20.961 +02:00 [INF] Fin du Seed
+2019-06-25 14:50:21.045 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-25 14:50:30.877 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-25 14:50:30.894 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-25 14:50:30.934 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-25 14:50:30.966 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-25 14:50:31.050 +02:00 [INF] Executing action method SandBox.Controllers.HomeController.Index (SandBox) - Validation state: "Valid"
+2019-06-25 14:50:34.684 +02:00 [INF] Executed action method SandBox.Controllers.HomeController.Index (SandBox), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3626.1966ms.
+2019-06-25 14:50:34.712 +02:00 [INF] Executing ViewResult, running view Index.
+2019-06-25 14:50:34.851 +02:00 [INF] Executed ViewResult - view Index executed in 150.2285ms.
+2019-06-25 14:50:34.853 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 3884.3401000000003ms
+2019-06-25 14:50:34.855 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-25 14:50:34.867 +02:00 [INF] Request finished in 3989.8861ms 200 text/html; charset=utf-8
+2019-06-25 14:50:34.924 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/lib/signalr/dist/browser/signalr.js  
+2019-06-25 14:50:34.937 +02:00 [INF] Request finished in 13.7419ms 404 
+2019-06-25 14:50:35.157 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/lib/signalr/dist/browser/signalr.js  
+2019-06-25 14:50:35.162 +02:00 [INF] Request finished in 4.1027ms 404 
+2019-06-25 14:50:35.176 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:1987/chatHub/negotiate text/plain;charset=UTF-8 0
+2019-06-25 14:50:35.178 +02:00 [INF] Request finished in 1.5636ms 404 
+2019-06-25 14:50:35.238 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-25 14:50:35.251 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-25 14:50:35.258 +02:00 [INF] Request finished in 20.6704ms 200 image/x-icon
+2019-06-25 14:50:40.789 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/ML/ML/TrainModel  
+2019-06-25 14:50:40.791 +02:00 [INF] Executing endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:50:40.800 +02:00 [INF] Route matched with {area = "ML", action = "TrainModel", controller = "ML"}. Executing action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)
+2019-06-25 14:50:40.833 +02:00 [INF] Executing action method SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) - Validation state: "Valid"
+2019-06-25 14:50:45.064 +02:00 [INF] Executed action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) in 4259.9983ms
+2019-06-25 14:50:45.066 +02:00 [INF] Executed endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:50:45.091 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SandBox.Areas.ML.Controllers.MLController.TrainModel() in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Areas\ML\Controllers\MLController.cs:line 40
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\SecurityHeadersMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-25 14:50:45.182 +02:00 [INF] Request finished in 4392.9836ms 500 text/html; charset=utf-8
+2019-06-25 14:50:58.148 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/ML/ML/TrainModel  
+2019-06-25 14:50:58.153 +02:00 [INF] Executing endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:50:58.155 +02:00 [INF] Route matched with {area = "ML", action = "TrainModel", controller = "ML"}. Executing action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)
+2019-06-25 14:50:58.187 +02:00 [INF] Executing action method SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) - Validation state: "Valid"
+2019-06-25 14:51:35.461 +02:00 [INF] Lancement de l'application
+2019-06-25 14:51:37.612 +02:00 [INF] Lancement des migrations
+2019-06-25 14:51:38.287 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'SandBoxDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=SandBox 
+2019-06-25 14:51:38.294 +02:00 [INF] Fin des migrations
+2019-06-25 14:51:38.296 +02:00 [INF] Début du Seed
+2019-06-25 14:51:38.297 +02:00 [INF] Début du seed Countries
+2019-06-25 14:51:38.430 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.countries.json
+2019-06-25 14:51:38.682 +02:00 [INF] Saved 33 entities to in-memory store.
+2019-06-25 14:51:38.693 +02:00 [INF] Début du seed Region
+2019-06-25 14:51:38.700 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:51:38.833 +02:00 [INF] Saved 23 entities to in-memory store.
+2019-06-25 14:51:38.836 +02:00 [INF] Début du seed Departments
+2019-06-25 14:51:38.840 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:51:38.882 +02:00 [INF] Saved 107 entities to in-memory store.
+2019-06-25 14:51:42.070 +02:00 [INF] Saved 7440 entities to in-memory store.
+2019-06-25 14:51:42.125 +02:00 [INF] Fin du Seed
+2019-06-25 14:51:42.190 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-25 14:51:50.817 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/ML/ML/TrainModel  
+2019-06-25 14:51:50.833 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-25 14:51:50.879 +02:00 [INF] Executing endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:51:50.915 +02:00 [INF] Route matched with {area = "ML", action = "TrainModel", controller = "ML"}. Executing action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)
+2019-06-25 14:51:51.000 +02:00 [INF] Executing action method SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) - Validation state: "Valid"
+2019-06-25 14:51:53.494 +02:00 [INF] Executed action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) in 2574.4025ms
+2019-06-25 14:51:53.499 +02:00 [INF] Executed endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:51:53.565 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SandBox.Areas.ML.Controllers.MLController.TrainModel() in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Areas\ML\Controllers\MLController.cs:line 41
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\SecurityHeadersMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-25 14:51:53.684 +02:00 [INF] Request finished in 2867.6927ms 500 text/html; charset=utf-8
+2019-06-25 14:56:24.819 +02:00 [INF] Lancement de l'application
+2019-06-25 14:56:26.912 +02:00 [INF] Lancement des migrations
+2019-06-25 14:56:27.589 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'SandBoxDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=SandBox 
+2019-06-25 14:56:27.595 +02:00 [INF] Fin des migrations
+2019-06-25 14:56:27.597 +02:00 [INF] Début du Seed
+2019-06-25 14:56:27.598 +02:00 [INF] Début du seed Countries
+2019-06-25 14:56:27.731 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.countries.json
+2019-06-25 14:56:27.976 +02:00 [INF] Saved 33 entities to in-memory store.
+2019-06-25 14:56:27.987 +02:00 [INF] Début du seed Region
+2019-06-25 14:56:27.994 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:56:28.117 +02:00 [INF] Saved 23 entities to in-memory store.
+2019-06-25 14:56:28.120 +02:00 [INF] Début du seed Departments
+2019-06-25 14:56:28.124 +02:00 [INF] utilisation du fichier SandBox.DataAccess.DBContext.SeedFiles.departments.json
+2019-06-25 14:56:28.166 +02:00 [INF] Saved 107 entities to in-memory store.
+2019-06-25 14:56:31.155 +02:00 [INF] Saved 7440 entities to in-memory store.
+2019-06-25 14:56:31.212 +02:00 [INF] Fin du Seed
+2019-06-25 14:56:31.282 +02:00 [INF] User profile is available. Using 'C:\Users\acv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-06-25 14:56:55.031 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/  
+2019-06-25 14:56:55.055 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-06-25 14:56:55.107 +02:00 [INF] Executing endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-25 14:56:55.139 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing action SandBox.Controllers.HomeController.Index (SandBox)
+2019-06-25 14:56:55.223 +02:00 [INF] Executing action method SandBox.Controllers.HomeController.Index (SandBox) - Validation state: "Valid"
+2019-06-25 14:56:55.229 +02:00 [INF] Executed action method SandBox.Controllers.HomeController.Index (SandBox), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.75550000000000006ms.
+2019-06-25 14:56:55.264 +02:00 [INF] Executing ViewResult, running view Index.
+2019-06-25 14:56:55.384 +02:00 [INF] Executed ViewResult - view Index executed in 141.0833ms.
+2019-06-25 14:56:55.387 +02:00 [INF] Executed action SandBox.Controllers.HomeController.Index (SandBox) in 246.48360000000002ms
+2019-06-25 14:56:55.388 +02:00 [INF] Executed endpoint 'SandBox.Controllers.HomeController.Index (SandBox)'
+2019-06-25 14:56:55.401 +02:00 [INF] Request finished in 370.7786ms 200 text/html; charset=utf-8
+2019-06-25 14:56:55.440 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/lib/signalr/dist/browser/signalr.js  
+2019-06-25 14:56:55.455 +02:00 [INF] Request finished in 15.7561ms 404 
+2019-06-25 14:56:55.651 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/lib/signalr/dist/browser/signalr.js  
+2019-06-25 14:56:55.654 +02:00 [INF] Request finished in 3.5087ms 404 
+2019-06-25 14:56:55.668 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:1987/chatHub/negotiate text/plain;charset=UTF-8 0
+2019-06-25 14:56:55.670 +02:00 [INF] Request finished in 1.6061ms 404 
+2019-06-25 14:56:55.837 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/favicon.ico  
+2019-06-25 14:56:55.867 +02:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\acv\Personnel\Developpement\SandBox\SandBox\wwwroot\favicon.ico'
+2019-06-25 14:56:55.874 +02:00 [INF] Request finished in 37.6154ms 200 image/x-icon
+2019-06-25 14:56:58.486 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:1987/ML/ML/TrainModel  
+2019-06-25 14:56:58.488 +02:00 [INF] Executing endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:56:58.499 +02:00 [INF] Route matched with {area = "ML", action = "TrainModel", controller = "ML"}. Executing action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)
+2019-06-25 14:56:58.530 +02:00 [INF] Executing action method SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) - Validation state: "Valid"
+2019-06-25 14:57:02.699 +02:00 [INF] Executed action SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox) in 4195.881ms
+2019-06-25 14:57:02.703 +02:00 [INF] Executed endpoint 'SandBox.Areas.ML.Controllers.MLController.TrainModel (SandBox)'
+2019-06-25 14:57:02.757 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SandBox.Areas.ML.Controllers.MLController.TrainModel() in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Areas\ML\Controllers\MLController.cs:line 41
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SandBox.Middlewares.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in C:\Users\acv\Personnel\Developpement\SandBox\SandBox\Middlewares\SecurityHeadersMiddleware.cs:line 30
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-25 14:57:02.861 +02:00 [INF] Request finished in 4374.8849ms 500 text/html; charset=utf-8

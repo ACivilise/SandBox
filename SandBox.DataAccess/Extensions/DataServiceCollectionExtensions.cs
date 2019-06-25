@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Reflection;
+using SandBox.DataAccess.Repositories.Weather.Interfaces;
+using SandBox.DataAccess.Repositories.Weather;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -18,6 +20,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
             return services
+                .AddScoped<IWeatherRepository, WeatherRepository>()
                 .AddScoped<IIrisRepository, IrisRepository>();
         }
     }

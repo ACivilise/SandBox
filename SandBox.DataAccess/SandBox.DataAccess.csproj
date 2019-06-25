@@ -40,6 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.2.4" />
@@ -61,10 +62,12 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+    <Folder Include="AutoMapper\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SandBox.Constantes\SandBox.Constantes.csproj" />
+    <ProjectReference Include="..\SandBox.DTOs\SandBox.DTOs.csproj" />
   </ItemGroup>
 
 </Project>

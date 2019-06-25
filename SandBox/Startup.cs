@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
@@ -12,11 +12,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.ML;
 using Microsoft.Net.Http.Headers;
 using SandBox.ActionFilters;
+using SandBox.DataAccess.Mapper;
 using SandBox.DataAccess.DBContext;
 using SandBox.DTOs.DTOs;
 using SandBox.Middlewares;
 using System;
-using System.Reflection;
 
 namespace SandBox
 {
@@ -45,14 +45,17 @@ namespace SandBox
             services.Configure<FormOptions>(options => { options.ValueCountLimit = 10240; });
             //On intègre le modèle au démarage du serveur
             services.AddPredictionEnginePool<IrisData, ClusterPrediction>().FromFile("/model.save");
-
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>()
                             .AddSingleton<IActionContextAccessor, ActionContextAccessor>()
                             .AddSingleton<IContentTypeProvider, FileExtensionContentTypeProvider>();
             //.AddSingleton<IFileProvider, FileProvider>()
             //.AddTransient<IEmailSender, EmailSender>();
-            services.AddRepositories().AddServices();
+            services.AddRepositories()
+                    .AddServices();
             services.AddSignalR();
+            services.AddAutoMapper(typeof(DTOsProfile));
+            //services.AddAutoMapperProfiles();
+
         }
 
         public virtual void ConfigureAuth(IServiceCollection services)
@@ -88,7 +91,7 @@ namespace SandBox
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IMapper autoMapper)
         {
             if (env.IsDevelopment())
             {
@@ -130,7 +133,7 @@ namespace SandBox
                     name: "default",
                     template: "{controller=Home}/{action=Index}/");
             });
-
+            autoMapper.ConfigurationProvider.AssertConfigurationIsValid();
         }
     }
 }

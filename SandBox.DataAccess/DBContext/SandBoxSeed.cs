@@ -295,11 +295,13 @@ namespace SandBox.DataAccess.DBContext
                     var idRegion = (await Context.Regions.FirstOrDefaultAsync(x => x.Code == tmaxForRegion.fields.code_insee_region))?.Id;
                     if (idContry.HasValue && idRegion.HasValue)
                     {
+                        var date = DateTime.Parse(tmaxForRegion.record_timestamp);
                         var temparture = new Temperatures()
                         {
                             TemperatureMin = tmaxForRegion.fields.tmin,
                             TemperatureMoy = tmaxForRegion.fields.tmoy,
                             TemperatureMax = tmaxForRegion.fields.tmax,
+                            Date = date,
                             IdCountry = idContry.Value,
                             IdRegion = idRegion.Value
                         };
