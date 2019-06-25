@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandBox.Constantes", "SandB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SandBox.DataAccess", "SandBox.DataAccess\SandBox.DataAccess.csproj", "{4DCA922A-34B9-4D43-AB5A-6302077AE8FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox.Idenity", "SandBox.Idenity\SandBox.Idenity.csproj", "{5E2BF14A-2BDD-43DF-BAC8-7CAD3A3263D6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,10 +41,6 @@ Global
 		{4DCA922A-34B9-4D43-AB5A-6302077AE8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DCA922A-34B9-4D43-AB5A-6302077AE8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DCA922A-34B9-4D43-AB5A-6302077AE8FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E2BF14A-2BDD-43DF-BAC8-7CAD3A3263D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E2BF14A-2BDD-43DF-BAC8-7CAD3A3263D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E2BF14A-2BDD-43DF-BAC8-7CAD3A3263D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E2BF14A-2BDD-43DF-BAC8-7CAD3A3263D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,7 +50,6 @@ Global
 		{D96B4846-7A39-4B2D-A9EF-618912C94F3A} = {39D6CF9C-3555-4E2D-9A6E-20E7168B6967}
 		{BD5901DE-DAE1-4FEE-B4D4-AC0FC2FDF357} = {39D6CF9C-3555-4E2D-9A6E-20E7168B6967}
 		{4DCA922A-34B9-4D43-AB5A-6302077AE8FD} = {39D6CF9C-3555-4E2D-9A6E-20E7168B6967}
-		{5E2BF14A-2BDD-43DF-BAC8-7CAD3A3263D6} = {39D6CF9C-3555-4E2D-9A6E-20E7168B6967}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B613A5AD-DE20-4508-9706-7E583BAE278E}
