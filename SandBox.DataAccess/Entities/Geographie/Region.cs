@@ -22,7 +22,7 @@ namespace SandBox.DataAccess.Entities.Geographie
         [Required]
         public int IdPays { get; set; }
         [ForeignKey(nameof(IdPays))]
-        public Pays Pays { get; set; }
+        public Country Pays { get; set; }
 
         /// <summary>
         /// Obtient ou défini la liste des départements associés à cette region

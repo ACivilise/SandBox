@@ -6,14 +6,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.ML;
 using Microsoft.Net.Http.Headers;
 using SandBox.ActionFilters;
+using SandBox.DataAccess.DBContext;
 using SandBox.DTOs.DTOs;
 using SandBox.Middlewares;
 using System;
+using System.Reflection;
 
 namespace SandBox
 {
@@ -30,7 +33,13 @@ namespace SandBox
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddEntityFrameworkInMemoryDatabase();
-
+            var dbContextOptionsBuilder = new Action<DbContextOptionsBuilder>(builder =>
+            {
+                builder.UseInMemoryDatabase(databaseName: "SandBox");
+            });
+            services
+                .AddDbContext<SandBoxDbContext>(dbContextOptionsBuilder, ServiceLifetime.Scoped)
+                .AddScoped<ISandBoxDbContext, SandBoxDbContext>();
             ConfigureAuth(services);
             //augmente le nombre de champs max que peut contenir une form, par défaut cette limite est à 1024
             services.Configure<FormOptions>(options => { options.ValueCountLimit = 10240; });
@@ -43,7 +52,6 @@ namespace SandBox
             //.AddSingleton<IFileProvider, FileProvider>()
             //.AddTransient<IEmailSender, EmailSender>();
             services.AddRepositories().AddServices();
-
             services.AddSignalR();
         }
 

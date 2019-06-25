@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace SandBox.DataAccess.Entities.Geographie
 {
     [Table("Pays")]
-    public class Pays
+    public class Country
     {
         [Key]
         public int Id { get; set; }
@@ -34,11 +34,11 @@ namespace SandBox.DataAccess.Entities.Geographie
         /// <summary>
         /// Obtient ou défini la liste des Code Postaux associés à ce pays
         /// </summary>
-        public virtual List<CodePostal> CodePostaux { get; } = new List<CodePostal>();
+        public virtual List<ZipCode> CodePostaux { get; } = new List<ZipCode>();
 
         /// <summary>
         /// Obtient ou défini la liste des Villes associés à ce pays
         /// </summary>
-        public virtual List<Ville> Villes { get; } = new List<Ville>();
+        public virtual List<City> Villes { get; } = new List<City>();
     }
 }

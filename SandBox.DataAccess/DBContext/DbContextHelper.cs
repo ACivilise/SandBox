@@ -15,7 +15,7 @@ namespace SandBox.DataAccess.DBContext
         /// <returns><paramref name="app"/></returns>
         public static IServiceProvider MigrateDb(this IServiceProvider services)
         {
-            SandBoxDbContext applicationContext = services.GetRequiredService<SandBoxDbContext>();
+            var applicationContext = services.GetRequiredService<SandBoxDbContext>();
             if(!applicationContext.Database.IsInMemory())
             {
                 var pendingMigrations = applicationContext.Database.GetPendingMigrations().ToList();

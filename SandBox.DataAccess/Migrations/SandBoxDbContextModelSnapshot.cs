@@ -180,95 +180,7 @@ namespace SandBox.DataAccess.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.CodePostal", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Code");
-
-                    b.Property<int>("IdPays");
-
-                    b.Property<string>("Libelle")
-                        .IsRequired()
-                        .HasMaxLength(10);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdPays");
-
-                    b.ToTable("CodePostaux");
-                });
-
-            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.Departement", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Code")
-                        .IsRequired()
-                        .HasMaxLength(20);
-
-                    b.Property<int>("IdRegion");
-
-                    b.Property<string>("Libelle");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdRegion");
-
-                    b.ToTable("Departements");
-                });
-
-            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.Pays", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Code")
-                        .HasMaxLength(20);
-
-                    b.Property<string>("ISO2")
-                        .HasMaxLength(2);
-
-                    b.Property<string>("ISO3")
-                        .HasMaxLength(3);
-
-                    b.Property<string>("Libelle")
-                        .IsRequired()
-                        .HasMaxLength(100);
-
-                    b.Property<string>("LibelleEN")
-                        .HasMaxLength(100);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Pays");
-                });
-
-            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.Region", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Code");
-
-                    b.Property<int>("IdPays");
-
-                    b.Property<string>("Libelle");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdPays");
-
-                    b.ToTable("Regions");
-                });
-
-            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.Ville", b =>
+            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.City", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -297,7 +209,130 @@ namespace SandBox.DataAccess.Migrations
 
                     b.HasIndex("IdPays");
 
-                    b.ToTable("Villes");
+                    b.ToTable("Cities");
+                });
+
+            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.Country", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Code")
+                        .HasMaxLength(20);
+
+                    b.Property<string>("ISO2")
+                        .HasMaxLength(2);
+
+                    b.Property<string>("ISO3")
+                        .HasMaxLength(3);
+
+                    b.Property<string>("Libelle")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.Property<string>("LibelleEN")
+                        .HasMaxLength(100);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Pays");
+                });
+
+            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.Departement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(20);
+
+                    b.Property<int>("IdRegion");
+
+                    b.Property<string>("Libelle");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdRegion");
+
+                    b.ToTable("Departements");
+                });
+
+            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.Region", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Code");
+
+                    b.Property<int>("IdPays");
+
+                    b.Property<string>("Libelle");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdPays");
+
+                    b.ToTable("Regions");
+                });
+
+            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.ZipCode", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Code");
+
+                    b.Property<int>("IdPays");
+
+                    b.Property<string>("Libelle")
+                        .IsRequired()
+                        .HasMaxLength(10);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdPays");
+
+                    b.ToTable("ZipCodes");
+                });
+
+            modelBuilder.Entity("SandBox.DataAccess.Entities.Weather.Temperatures", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Date");
+
+                    b.Property<int?>("IdCity");
+
+                    b.Property<int>("IdCountry");
+
+                    b.Property<int?>("IdRegion");
+
+                    b.Property<int?>("IdZipCode");
+
+                    b.Property<decimal>("TemperatureMax");
+
+                    b.Property<decimal>("TemperatureMin");
+
+                    b.Property<decimal>("TemperatureMoy");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdCity");
+
+                    b.HasIndex("IdCountry");
+
+                    b.HasIndex("IdRegion");
+
+                    b.HasIndex("IdZipCode");
+
+                    b.ToTable("Temperatures");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -345,10 +380,20 @@ namespace SandBox.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.CodePostal", b =>
+            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.City", b =>
                 {
-                    b.HasOne("SandBox.DataAccess.Entities.Geographie.Pays", "Pays")
-                        .WithMany("CodePostaux")
+                    b.HasOne("SandBox.DataAccess.Entities.Geographie.ZipCode", "CodePostal")
+                        .WithMany("Villes")
+                        .HasForeignKey("IdCodePostal")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("SandBox.DataAccess.Entities.Geographie.Departement", "Departement")
+                        .WithMany("Villes")
+                        .HasForeignKey("IdDepartement")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("SandBox.DataAccess.Entities.Geographie.Country", "Pays")
+                        .WithMany("Villes")
                         .HasForeignKey("IdPays")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
@@ -363,28 +408,38 @@ namespace SandBox.DataAccess.Migrations
 
             modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.Region", b =>
                 {
-                    b.HasOne("SandBox.DataAccess.Entities.Geographie.Pays", "Pays")
+                    b.HasOne("SandBox.DataAccess.Entities.Geographie.Country", "Pays")
                         .WithMany("Regions")
                         .HasForeignKey("IdPays")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.Ville", b =>
+            modelBuilder.Entity("SandBox.DataAccess.Entities.Geographie.ZipCode", b =>
                 {
-                    b.HasOne("SandBox.DataAccess.Entities.Geographie.CodePostal", "CodePostal")
-                        .WithMany("Villes")
-                        .HasForeignKey("IdCodePostal")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("SandBox.DataAccess.Entities.Geographie.Departement", "Departement")
-                        .WithMany("Villes")
-                        .HasForeignKey("IdDepartement")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("SandBox.DataAccess.Entities.Geographie.Pays", "Pays")
-                        .WithMany("Villes")
+                    b.HasOne("SandBox.DataAccess.Entities.Geographie.Country", "Pays")
+                        .WithMany("CodePostaux")
                         .HasForeignKey("IdPays")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("SandBox.DataAccess.Entities.Weather.Temperatures", b =>
+                {
+                    b.HasOne("SandBox.DataAccess.Entities.Geographie.City", "City")
+                        .WithMany()
+                        .HasForeignKey("IdCity");
+
+                    b.HasOne("SandBox.DataAccess.Entities.Geographie.Country", "Country")
+                        .WithMany()
+                        .HasForeignKey("IdCountry")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("SandBox.DataAccess.Entities.Geographie.Region", "Region")
+                        .WithMany()
+                        .HasForeignKey("IdRegion");
+
+                    b.HasOne("SandBox.DataAccess.Entities.Geographie.ZipCode", "ZipCode")
+                        .WithMany()
+                        .HasForeignKey("IdZipCode");
                 });
 #pragma warning restore 612, 618
         }

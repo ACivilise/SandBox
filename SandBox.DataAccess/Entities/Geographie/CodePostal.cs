@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SandBox.DataAccess.Entities.Geographie
 {
-    public class CodePostal
+    public class ZipCode
     {
         /// <summary>
         /// Obtient ou défini l'identifiant numérique unique du code postal
@@ -27,11 +27,11 @@ namespace SandBox.DataAccess.Entities.Geographie
         [Required]
         public int IdPays { get; set; }
         [ForeignKey(nameof(IdPays))]
-        public Pays Pays { get; set; }
+        public Country Pays { get; set; }
 
         /// <summary>
         /// Obtient ou défini la liste des villes associées à ce code postal
         /// </summary>
-        public virtual List<Ville> Villes { get; } = new List<Ville>();
+        public virtual List<City> Villes { get; } = new List<City>();
     }
 }

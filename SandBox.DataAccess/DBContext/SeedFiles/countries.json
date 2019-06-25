@@ -1,0 +1,266 @@
+[
+  {
+    "id": "1",
+    "code": "4",
+    "alpha2": "AF",
+    "alpha3": "AFG",
+    "nom_en_gb": "Afghanistan",
+    "nom_fr_fr": "Afghanistan"
+  },
+  {
+    "id": "2",
+    "code": "8",
+    "alpha2": "AL",
+    "alpha3": "ALB",
+    "nom_en_gb": "Albania",
+    "nom_fr_fr": "Albanie"
+  },
+  {
+    "id": "3",
+    "code": "10",
+    "alpha2": "AQ",
+    "alpha3": "ATA",
+    "nom_en_gb": "Antarctica",
+    "nom_fr_fr": "Antarctique"
+  },
+  {
+    "id": "4",
+    "code": "12",
+    "alpha2": "DZ",
+    "alpha3": "DZA",
+    "nom_en_gb": "Algeria",
+    "nom_fr_fr": "Alg\u00e9rie"
+  },
+  {
+    "id": "5",
+    "code": "16",
+    "alpha2": "AS",
+    "alpha3": "ASM",
+    "nom_en_gb": "American Samoa",
+    "nom_fr_fr": "Samoa Am\u00e9ricaines"
+  },
+  {
+    "id": "6",
+    "code": "20",
+    "alpha2": "AD",
+    "alpha3": "AND",
+    "nom_en_gb": "Andorra",
+    "nom_fr_fr": "Andorre"
+  },
+  {
+    "id": "10",
+    "code": "32",
+    "alpha2": "AR",
+    "alpha3": "ARG",
+    "nom_en_gb": "Argentina",
+    "nom_fr_fr": "Argentine"
+  },
+  {
+    "id": "11",
+    "code": "36",
+    "alpha2": "AU",
+    "alpha3": "AUS",
+    "nom_en_gb": "Australia",
+    "nom_fr_fr": "Australie"
+  },
+  {
+    "id": "12",
+    "code": "40",
+    "alpha2": "AT",
+    "alpha3": "AUT",
+    "nom_en_gb": "Austria",
+    "nom_fr_fr": "Autriche"
+  },
+  {
+    "id": "15",
+    "code": "50",
+    "alpha2": "BD",
+    "alpha3": "BGD",
+    "nom_en_gb": "Bangladesh",
+    "nom_fr_fr": "Bangladesh"
+  },
+  {
+    "id": "16",
+    "code": "51",
+    "alpha2": "AM",
+    "alpha3": "ARM",
+    "nom_en_gb": "Armenia",
+    "nom_fr_fr": "Arm\u00e9nie"
+  },
+  {
+    "id": "17",
+    "code": "52",
+    "alpha2": "BB",
+    "alpha3": "BRB",
+    "nom_en_gb": "Barbados",
+    "nom_fr_fr": "Barbade"
+  },
+  {
+    "id": "18",
+    "code": "56",
+    "alpha2": "BE",
+    "alpha3": "BEL",
+    "nom_en_gb": "Belgium",
+    "nom_fr_fr": "Belgique"
+  },
+  {
+    "id": "21",
+    "code": "68",
+    "alpha2": "BO",
+    "alpha3": "BOL",
+    "nom_en_gb": "Bolivia",
+    "nom_fr_fr": "Bolivie"
+  },
+  {
+    "id": "25",
+    "code": "76",
+    "alpha2": "BR",
+    "alpha3": "BRA",
+    "nom_en_gb": "Brazil",
+    "nom_fr_fr": "Br\u00e9sil"
+  },
+  {
+    "id": "31",
+    "code": "100",
+    "alpha2": "BG",
+    "alpha3": "BGR",
+    "nom_en_gb": "Bulgaria",
+    "nom_fr_fr": "Bulgarie"
+  },
+  {
+    "id": "32",
+    "code": "104",
+    "alpha2": "MM",
+    "alpha3": "MMR",
+    "nom_en_gb": "Myanmar",
+    "nom_fr_fr": "Myanmar"
+  },
+  {
+    "id": "33",
+    "code": "108",
+    "alpha2": "BI",
+    "alpha3": "BDI",
+    "nom_en_gb": "Burundi",
+    "nom_fr_fr": "Burundi"
+  },
+  {
+    "id": "34",
+    "code": "112",
+    "alpha2": "BY",
+    "alpha3": "BLR",
+    "nom_en_gb": "Belarus",
+    "nom_fr_fr": "B\u00e9larus"
+  },
+  {
+    "id": "35",
+    "code": "116",
+    "alpha2": "KH",
+    "alpha3": "KHM",
+    "nom_en_gb": "Cambodia",
+    "nom_fr_fr": "Cambodge"
+  },
+  {
+    "id": "36",
+    "code": "120",
+    "alpha2": "CM",
+    "alpha3": "CMR",
+    "nom_en_gb": "Cameroon",
+    "nom_fr_fr": "Cameroun"
+  },
+  {
+    "id": "37",
+    "code": "124",
+    "alpha2": "CA",
+    "alpha3": "CAN",
+    "nom_en_gb": "Canada",
+    "nom_fr_fr": "Canada"
+  },
+  {
+    "id": "38",
+    "code": "132",
+    "alpha2": "CV",
+    "alpha3": "CPV",
+    "nom_en_gb": "Cape Verde",
+    "nom_fr_fr": "Cap-vert"
+  },
+  {
+    "id": "39",
+    "code": "136",
+    "alpha2": "KY",
+    "alpha3": "CYM",
+    "nom_en_gb": "Cayman Islands",
+    "nom_fr_fr": "\u00celes Ca\u00efmanes"
+  },
+  {
+    "id": "40",
+    "code": "140",
+    "alpha2": "CF",
+    "alpha3": "CAF",
+    "nom_en_gb": "Central African",
+    "nom_fr_fr": "R\u00e9publique Centrafricaine"
+  },
+  {
+    "id": "41",
+    "code": "144",
+    "alpha2": "LK",
+    "alpha3": "LKA",
+    "nom_en_gb": "Sri Lanka",
+    "nom_fr_fr": "Sri Lanka"
+  },
+  {
+    "id": "42",
+    "code": "148",
+    "alpha2": "TD",
+    "alpha3": "TCD",
+    "nom_en_gb": "Chad",
+    "nom_fr_fr": "Tchad"
+  },
+  {
+    "id": "43",
+    "code": "152",
+    "alpha2": "CL",
+    "alpha3": "CHL",
+    "nom_en_gb": "Chile",
+    "nom_fr_fr": "Chili"
+  },
+  {
+    "id": "44",
+    "code": "156",
+    "alpha2": "CN",
+    "alpha3": "CHN",
+    "nom_en_gb": "China",
+    "nom_fr_fr": "Chine"
+  },
+  {
+    "id": "45",
+    "code": "158",
+    "alpha2": "TW",
+    "alpha3": "TWN",
+    "nom_en_gb": "Taiwan",
+    "nom_fr_fr": "Ta\u00efwan"
+  },
+  {
+    "id": "46",
+    "code": "162",
+    "alpha2": "CX",
+    "alpha3": "CXR",
+    "nom_en_gb": "Christmas Island",
+    "nom_fr_fr": "\u00cele Christmas"
+  },
+  {
+    "id": "47",
+    "code": "166",
+    "alpha2": "CC",
+    "alpha3": "CCK",
+    "nom_en_gb": "Cocos (Keeling) Islands",
+    "nom_fr_fr": "\u00celes Cocos (Keeling)"
+  },
+  {
+    "id": "75",
+    "code": "250",
+    "alpha2": "FR",
+    "alpha3": "FRA",
+    "nom_en_gb": "France",
+    "nom_fr_fr": "France"
+  }
+]

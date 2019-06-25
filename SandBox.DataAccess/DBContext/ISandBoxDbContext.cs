@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SandBox.DataAccess.Entities.Geographie;
+using SandBox.DataAccess.Entities.Weather;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,10 +9,11 @@ namespace SandBox.DataAccess.DBContext
 {
     public interface ISandBoxDbContext
     {
-        DbSet<CodePostal> CodePostaux { get; }
+        DbSet<ZipCode> ZipCodes { get; }
         DbSet<Departement> Departements { get; }
-        DbSet<Pays> Pays { get; }
+        DbSet<Country> Countries { get; }
         DbSet<Region> Regions { get; }
-        DbSet<Ville> Villes { get;  }
+        DbSet<City> Cities { get; }
+        DbSet<Temperatures> Temperatures { get; }
     }
 }

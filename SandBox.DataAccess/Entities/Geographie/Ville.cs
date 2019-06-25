@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SandBox.DataAccess.Entities.Geographie
 {
-    public class Ville
+    public class City
     {
         /// <summary>
         /// Obtient ou défini l'identifiant numérique unique de la ville
@@ -28,7 +28,7 @@ namespace SandBox.DataAccess.Entities.Geographie
         [Required]
         public int IdCodePostal { get; set; }
         [ForeignKey(nameof(IdCodePostal))]
-        public CodePostal CodePostal { get; set; }
+        public ZipCode CodePostal { get; set; }
 
         /// <summary>
         /// Obtient ou défini le pays
@@ -44,6 +44,6 @@ namespace SandBox.DataAccess.Entities.Geographie
         [Required]
         public int IdPays { get; set; }
         [ForeignKey(nameof(IdPays))]
-        public Pays Pays { get; set; }
+        public Country Pays { get; set; }
     }
 }

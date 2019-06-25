@@ -5,11 +5,38 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="DBContext\SeedFiles\cities.json" />
+    <None Remove="DBContext\SeedFiles\cities_All.json" />
+    <None Remove="DBContext\SeedFiles\countries.json" />
+    <None Remove="DBContext\SeedFiles\countries_All.json" />
+    <None Remove="DBContext\SeedFiles\departments.json" />
+    <None Remove="DBContext\SeedFiles\temperature.json" />
     <None Remove="Help.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Help.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DBContext\SeedFiles\cities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBContext\SeedFiles\cities_All.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBContext\SeedFiles\countries.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBContext\SeedFiles\countries_All.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBContext\SeedFiles\departments.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBContext\SeedFiles\temperature.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

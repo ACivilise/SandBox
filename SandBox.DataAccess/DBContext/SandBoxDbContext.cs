@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SandBox.DataAccess.Entities.Geographie;
+using SandBox.DataAccess.Entities.Weather;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,11 +20,14 @@ namespace SandBox.DataAccess.DBContext
         }
 
         #region DbSets
-        public DbSet<CodePostal> CodePostaux { get; set; }
+        public DbSet<ZipCode> ZipCodes { get; set; }
         public DbSet<Departement> Departements { get; set; }
-        public DbSet<Pays> Pays { get; set; }
+        public DbSet<Country> Countries { get; set; }
         public DbSet<Region> Regions { get; set; }
-        public DbSet<Ville> Villes { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<Temperatures> Temperatures { get; set; }
+
+        
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

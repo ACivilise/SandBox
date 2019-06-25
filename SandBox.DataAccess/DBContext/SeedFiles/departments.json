@@ -1,0 +1,858 @@
+[
+  {
+    "code": "01",
+    "title": "AIN",
+    "region": {
+      "code": "82",
+      "title": "RHONE-ALPES"
+    }
+  },
+  {
+    "code": "02",
+    "title": "AISNE",
+    "region": {
+      "code": "22",
+      "title": "PICARDIE"
+    }
+  },
+  {
+    "code": "03",
+    "title": "ALLIER",
+    "region": {
+      "code": "83",
+      "title": "AUVERGNE"
+    }
+  },
+  {
+    "code": "04",
+    "title": "ALPES-DE-HAUTE-PROVENCE",
+    "region": {
+      "code": "93",
+      "title": "PROVENCE-ALPES-COTE D'AZUR"
+    }
+  },
+  {
+    "code": "05",
+    "title": "HAUTES-ALPES",
+    "region": {
+      "code": "93",
+      "title": "PROVENCE-ALPES-COTE D'AZUR"
+    }
+  },
+  {
+    "code": "06",
+    "title": "ALPES-MARITIMES",
+    "region": {
+      "code": "93",
+      "title": "PROVENCE-ALPES-COTE D'AZUR"
+    }
+  },
+  {
+    "code": "07",
+    "title": "ARDECHE",
+    "region": {
+      "code": "82",
+      "title": "RHONE-ALPES"
+    }
+  },
+  {
+    "code": "08",
+    "title": "ARDENNES",
+    "region": {
+      "code": "21",
+      "title": "CHAMPAGNE-ARDENNE"
+    }
+  },
+  {
+    "code": "09",
+    "title": "ARIEGE",
+    "region": {
+      "code": "73",
+      "title": "MIDI-PYRENEES"
+    }
+  },
+  {
+    "code": "10",
+    "title": "AUBE",
+    "region": {
+      "code": "21",
+      "title": "CHAMPAGNE-ARDENNE"
+    }
+  },
+  {
+    "code": "11",
+    "title": "AUDE",
+    "region": {
+      "code": "91",
+      "title": "LANGUEDOC-ROUSSILLON"
+    }
+  },
+  {
+    "code": "12",
+    "title": "AVEYRON",
+    "region": {
+      "code": "73",
+      "title": "MIDI-PYRENEES"
+    }
+  },
+  {
+    "code": "13",
+    "title": "BOUCHES-DU-RHONE",
+    "region": {
+      "code": "93",
+      "title": "PROVENCE-ALPES-COTE D'AZUR"
+    }
+  },
+  {
+    "code": "14",
+    "title": "CALVADOS",
+    "region": {
+      "code": "25",
+      "title": "BASSE-NORMANDIE"
+    }
+  },
+  {
+    "code": "15",
+    "title": "CANTAL",
+    "region": {
+      "code": "83",
+      "title": "AUVERGNE"
+    }
+  },
+  {
+    "code": "16",
+    "title": "CHARENTE",
+    "region": {
+      "code": "54",
+      "title": "POITOU-CHARENTES"
+    }
+  },
+  {
+    "code": "17",
+    "title": "CHARENTE-MARITIME",
+    "region": {
+      "code": "54",
+      "title": "POITOU-CHARENTES"
+    }
+  },
+  {
+    "code": "18",
+    "title": "CHER",
+    "region": {
+      "code": "24",
+      "title": "CENTRE"
+    }
+  },
+  {
+    "code": "19",
+    "title": "CORREZE",
+    "region": {
+      "code": "74",
+      "title": "LIMOUSIN"
+    }
+  },
+  {
+    "code": "21",
+    "title": "COTE-D'OR",
+    "region": {
+      "code": "26",
+      "title": "BOURGOGNE"
+    }
+  },
+  {
+    "code": "22",
+    "title": "COTES-D'ARMOR",
+    "region": {
+      "code": "53",
+      "title": "BRETAGNE"
+    }
+  },
+  {
+    "code": "23",
+    "title": "CREUSE",
+    "region": {
+      "code": "74",
+      "title": "LIMOUSIN"
+    }
+  },
+  {
+    "code": "24",
+    "title": "DORDOGNE",
+    "region": {
+      "code": "72",
+      "title": "AQUITAINE"
+    }
+  },
+  {
+    "code": "25",
+    "title": "DOUBS",
+    "region": {
+      "code": "43",
+      "title": "FRANCHE-COMTE"
+    }
+  },
+  {
+    "code": "26",
+    "title": "DROME",
+    "region": {
+      "code": "82",
+      "title": "RHONE-ALPES"
+    }
+  },
+  {
+    "code": "27",
+    "title": "EURE",
+    "region": {
+      "code": "23",
+      "title": "HAUTE-NORMANDIE"
+    }
+  },
+  {
+    "code": "28",
+    "title": "EURE-ET-LOIR",
+    "region": {
+      "code": "24",
+      "title": "CENTRE"
+    }
+  },
+  {
+    "code": "29",
+    "title": "FINISTERE",
+    "region": {
+      "code": "53",
+      "title": "BRETAGNE"
+    }
+  },
+  {
+    "code": "2A",
+    "title": "CORSE-DU-SUD",
+    "region": {
+      "code": "94",
+      "title": "CORSE"
+    }
+  },
+  {
+    "code": "2B",
+    "title": "HAUTE-CORSE",
+    "region": {
+      "code": "94",
+      "title": "CORSE"
+    }
+  },
+  {
+    "code": "30",
+    "title": "GARD",
+    "region": {
+      "code": "91",
+      "title": "LANGUEDOC-ROUSSILLON"
+    }
+  },
+  {
+    "code": "31",
+    "title": "HAUTE-GARONNE",
+    "region": {
+      "code": "73",
+      "title": "MIDI-PYRENEES"
+    }
+  },
+  {
+    "code": "32",
+    "title": "GERS",
+    "region": {
+      "code": "73",
+      "title": "MIDI-PYRENEES"
+    }
+  },
+  {
+    "code": "33",
+    "title": "GIRONDE",
+    "region": {
+      "code": "72",
+      "title": "AQUITAINE"
+    }
+  },
+  {
+    "code": "34",
+    "title": "HERAULT",
+    "region": {
+      "code": "91",
+      "title": "LANGUEDOC-ROUSSILLON"
+    }
+  },
+  {
+    "code": "35",
+    "title": "ILLE-ET-VILAINE",
+    "region": {
+      "code": "53",
+      "title": "BRETAGNE"
+    }
+  },
+  {
+    "code": "36",
+    "title": "INDRE",
+    "region": {
+      "code": "24",
+      "title": "CENTRE"
+    }
+  },
+  {
+    "code": "37",
+    "title": "INDRE-ET-LOIRE",
+    "region": {
+      "code": "24",
+      "title": "CENTRE"
+    }
+  },
+  {
+    "code": "38",
+    "title": "ISERE",
+    "region": {
+      "code": "82",
+      "title": "RHONE-ALPES"
+    }
+  },
+  {
+    "code": "39",
+    "title": "JURA",
+    "region": {
+      "code": "43",
+      "title": "FRANCHE-COMTE"
+    }
+  },
+  {
+    "code": "40",
+    "title": "LANDES",
+    "region": {
+      "code": "72",
+      "title": "AQUITAINE"
+    }
+  },
+  {
+    "code": "41",
+    "title": "LOIR-ET-CHER",
+    "region": {
+      "code": "24",
+      "title": "CENTRE"
+    }
+  },
+  {
+    "code": "42",
+    "title": "LOIRE",
+    "region": {
+      "code": "82",
+      "title": "RHONE-ALPES"
+    }
+  },
+  {
+    "code": "43",
+    "title": "HAUTE-LOIRE",
+    "region": {
+      "code": "83",
+      "title": "AUVERGNE"
+    }
+  },
+  {
+    "code": "44",
+    "title": "LOIRE-ATLANTIQUE",
+    "region": {
+      "code": "52",
+      "title": "PAYS DE LA LOIRE"
+    }
+  },
+  {
+    "code": "45",
+    "title": "LOIRET",
+    "region": {
+      "code": "24",
+      "title": "CENTRE"
+    }
+  },
+  {
+    "code": "46",
+    "title": "LOT",
+    "region": {
+      "code": "73",
+      "title": "MIDI-PYRENEES"
+    }
+  },
+  {
+    "code": "47",
+    "title": "LOT-ET-GARONNE",
+    "region": {
+      "code": "72",
+      "title": "AQUITAINE"
+    }
+  },
+  {
+    "code": "48",
+    "title": "LOZERE",
+    "region": {
+      "code": "91",
+      "title": "LANGUEDOC-ROUSSILLON"
+    }
+  },
+  {
+    "code": "49",
+    "title": "MAINE-ET-LOIRE",
+    "region": {
+      "code": "52",
+      "title": "PAYS DE LA LOIRE"
+    }
+  },
+  {
+    "code": "50",
+    "title": "MANCHE",
+    "region": {
+      "code": "25",
+      "title": "BASSE-NORMANDIE"
+    }
+  },
+  {
+    "code": "51",
+    "title": "MARNE",
+    "region": {
+      "code": "21",
+      "title": "CHAMPAGNE-ARDENNE"
+    }
+  },
+  {
+    "code": "52",
+    "title": "HAUTE-MARNE",
+    "region": {
+      "code": "21",
+      "title": "CHAMPAGNE-ARDENNE"
+    }
+  },
+  {
+    "code": "53",
+    "title": "MAYENNE",
+    "region": {
+      "code": "52",
+      "title": "PAYS DE LA LOIRE"
+    }
+  },
+  {
+    "code": "54",
+    "title": "MEURTHE-ET-MOSELLE",
+    "region": {
+      "code": "41",
+      "title": "LORRAINE"
+    }
+  },
+  {
+    "code": "55",
+    "title": "MEUSE",
+    "region": {
+      "code": "41",
+      "title": "LORRAINE"
+    }
+  },
+  {
+    "code": "56",
+    "title": "MORBIHAN",
+    "region": {
+      "code": "53",
+      "title": "BRETAGNE"
+    }
+  },
+  {
+    "code": "57",
+    "title": "MOSELLE",
+    "region": {
+      "code": "41",
+      "title": "LORRAINE"
+    }
+  },
+  {
+    "code": "58",
+    "title": "NIEVRE",
+    "region": {
+      "code": "26",
+      "title": "BOURGOGNE"
+    }
+  },
+  {
+    "code": "59",
+    "title": "NORD",
+    "region": {
+      "code": "31",
+      "title": "NORD-PAS-DE-CALAIS"
+    }
+  },
+  {
+    "code": "60",
+    "title": "OISE",
+    "region": {
+      "code": "22",
+      "title": "PICARDIE"
+    }
+  },
+  {
+    "code": "61",
+    "title": "ORNE",
+    "region": {
+      "code": "25",
+      "title": "BASSE-NORMANDIE"
+    }
+  },
+  {
+    "code": "62",
+    "title": "PAS-DE-CALAIS",
+    "region": {
+      "code": "31",
+      "title": "NORD-PAS-DE-CALAIS"
+    }
+  },
+  {
+    "code": "63",
+    "title": "PUY-DE-DOME",
+    "region": {
+      "code": "83",
+      "title": "AUVERGNE"
+    }
+  },
+  {
+    "code": "64",
+    "title": "PYRENEES-ATLANTIQUES",
+    "region": {
+      "code": "72",
+      "title": "AQUITAINE"
+    }
+  },
+  {
+    "code": "65",
+    "title": "HAUTES-PYRENEES",
+    "region": {
+      "code": "73",
+      "title": "MIDI-PYRENEES"
+    }
+  },
+  {
+    "code": "66",
+    "title": "PYRENEES-ORIENTALES",
+    "region": {
+      "code": "91",
+      "title": "LANGUEDOC-ROUSSILLON"
+    }
+  },
+  {
+    "code": "67",
+    "title": "BAS-RHIN",
+    "region": {
+      "code": "42",
+      "title": "ALSACE"
+    }
+  },
+  {
+    "code": "68",
+    "title": "HAUT-RHIN",
+    "region": {
+      "code": "42",
+      "title": "ALSACE"
+    }
+  },
+  {
+    "code": "69",
+    "title": "RHONE",
+    "region": {
+      "code": "82",
+      "title": "RHONE-ALPES"
+    }
+  },
+  {
+    "code": "70",
+    "title": "HAUTE-SAONE",
+    "region": {
+      "code": "43",
+      "title": "FRANCHE-COMTE"
+    }
+  },
+  {
+    "code": "71",
+    "title": "SAONE-ET-LOIRE",
+    "region": {
+      "code": "26",
+      "title": "BOURGOGNE"
+    }
+  },
+  {
+    "code": "72",
+    "title": "SARTHE",
+    "region": {
+      "code": "52",
+      "title": "PAYS DE LA LOIRE"
+    }
+  },
+  {
+    "code": "73",
+    "title": "SAVOIE",
+    "region": {
+      "code": "82",
+      "title": "RHONE-ALPES"
+    }
+  },
+  {
+    "code": "74",
+    "title": "HAUTE-SAVOIE",
+    "region": {
+      "code": "82",
+      "title": "RHONE-ALPES"
+    }
+  },
+  {
+    "code": "75",
+    "title": "PARIS",
+    "region": {
+      "code": "11",
+      "title": "ILE-DE-FRANCE"
+    }
+  },
+  {
+    "code": "76",
+    "title": "SEINE-MARITIME",
+    "region": {
+      "code": "23",
+      "title": "HAUTE-NORMANDIE"
+    }
+  },
+  {
+    "code": "77",
+    "title": "SEINE-ET-MARNE",
+    "region": {
+      "code": "11",
+      "title": "ILE-DE-FRANCE"
+    }
+  },
+  {
+    "code": "78",
+    "title": "YVELINES",
+    "region": {
+      "code": "11",
+      "title": "ILE-DE-FRANCE"
+    }
+  },
+  {
+    "code": "79",
+    "title": "DEUX-SEVRES",
+    "region": {
+      "code": "54",
+      "title": "POITOU-CHARENTES"
+    }
+  },
+  {
+    "code": "80",
+    "title": "SOMME",
+    "region": {
+      "code": "22",
+      "title": "PICARDIE"
+    }
+  },
+  {
+    "code": "81",
+    "title": "TARN",
+    "region": {
+      "code": "73",
+      "title": "MIDI-PYRENEES"
+    }
+  },
+  {
+    "code": "82",
+    "title": "TARN-ET-GARONNE",
+    "region": {
+      "code": "73",
+      "title": "MIDI-PYRENEES"
+    }
+  },
+  {
+    "code": "83",
+    "title": "VAR",
+    "region": {
+      "code": "93",
+      "title": "PROVENCE-ALPES-COTE D'AZUR"
+    }
+  },
+  {
+    "code": "84",
+    "title": "VAUCLUSE",
+    "region": {
+      "code": "93",
+      "title": "PROVENCE-ALPES-COTE D'AZUR"
+    }
+  },
+  {
+    "code": "85",
+    "title": "VENDEE",
+    "region": {
+      "code": "52",
+      "title": "PAYS DE LA LOIRE"
+    }
+  },
+  {
+    "code": "86",
+    "title": "VIENNE",
+    "region": {
+      "code": "54",
+      "title": "POITOU-CHARENTES"
+    }
+  },
+  {
+    "code": "87",
+    "title": "HAUTE-VIENNE",
+    "region": {
+      "code": "74",
+      "title": "LIMOUSIN"
+    }
+  },
+  {
+    "code": "88",
+    "title": "VOSGES",
+    "region": {
+      "code": "41",
+      "title": "LORRAINE"
+    }
+  },
+  {
+    "code": "89",
+    "title": "YONNE",
+    "region": {
+      "code": "26",
+      "title": "BOURGOGNE"
+    }
+  },
+  {
+    "code": "90",
+    "title": "TERRITOIRE DE BELFORT",
+    "region": {
+      "code": "43",
+      "title": "FRANCHE-COMTE"
+    }
+  },
+  {
+    "code": "91",
+    "title": "ESSONNE",
+    "region": {
+      "code": "11",
+      "title": "ILE-DE-FRANCE"
+    }
+  },
+  {
+    "code": "92",
+    "title": "HAUTS-DE-SEINE",
+    "region": {
+      "code": "11",
+      "title": "ILE-DE-FRANCE"
+    }
+  },
+  {
+    "code": "93",
+    "title": "SEINE-SAINT-DENIS",
+    "region": {
+      "code": "11",
+      "title": "ILE-DE-FRANCE"
+    }
+  },
+  {
+    "code": "94",
+    "title": "VAL-DE-MARNE",
+    "region": {
+      "code": "11",
+      "title": "ILE-DE-FRANCE"
+    }
+  },
+  {
+    "code": "95",
+    "title": "VAL-D'OISE",
+    "region": {
+      "code": "11",
+      "title": "ILE-DE-FRANCE"
+    }
+  },
+  {
+    "code": "95",
+    "title": "VAL-D'OISE",
+    "region": {
+      "code": "11",
+      "title": "ILE-DE-FRANCE"
+    }
+  },
+  {
+    "code": "971",
+    "title": "GUADELOUPE",
+    "region": {
+      "code": "12",
+      "title": "OUTRE-MER"
+    }
+  },
+  {
+    "code": "972",
+    "title": "MARTINIQUE",
+    "region": {
+      "code": "12",
+      "title": "OUTRE-MER"
+    }
+  },
+  {
+    "code": "973",
+    "title": "GUYANE",
+    "region": {
+      "code": "12",
+      "title": "OUTRE-MER"
+    }
+  },
+  {
+    "code": "974",
+    "title": "LA RÉUNION",
+    "region": {
+      "code": "12",
+      "title": "OUTRE-MER"
+    }
+  },
+  {
+    "code": "975",
+    "title": "SAINT-PIERRE-ET-MIQUELON",
+    "region": {
+      "code": "12",
+      "title": "OUTRE-MER"
+    }
+  },
+  {
+    "code": "976",
+    "title": "MAYOTTE",
+    "region": {
+      "code": "12",
+      "title": "OUTRE-MER"
+    }
+  },
+  {
+    "code": "977",
+    "title": "SAINT-BARTHÉLEMY",
+    "region": {
+      "code": "12",
+      "title": "OUTRE-MER"
+    }
+  },
+  {
+    "code": "978",
+    "title": "SAINT-MARTIN",
+    "region": {
+      "code": "12",
+      "title": "OUTRE-MER"
+    }
+  },
+  {
+    "code": "986",
+    "title": "WALLIS-ET-FUTUNA",
+    "region": {
+      "code": "12",
+      "title": "OUTRE-MER"
+    }
+  },
+  {
+    "code": "987",
+    "title": "POLYNÉSIE FRANÇAISE",
+    "region": {
+      "code": "12",
+      "title": "OUTRE-MER"
+    }
+  }
+]
