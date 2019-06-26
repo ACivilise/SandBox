@@ -52,13 +52,16 @@ namespace SandBox
             //.AddTransient<IEmailSender, EmailSender>();
             services.AddRepositories()
                     .AddServices();
+            ConfigureAdditionalServices(services);
             services.AddSignalR();
             services.AddAutoMapper(typeof(DTOsProfile));
             //services.AddAutoMapperProfiles();
 
         }
-
-        public virtual void ConfigureAuth(IServiceCollection services)
+        protected virtual void ConfigureAdditionalServices(IServiceCollection services)
+        {
+        }
+        protected virtual void ConfigureAuth(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -89,6 +92,7 @@ namespace SandBox
                 options.ExpireTimeSpan = new TimeSpan(1, 0, 0);
             });
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IMapper autoMapper)
